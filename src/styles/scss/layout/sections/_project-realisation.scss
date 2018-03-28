@@ -1,0 +1,93 @@
+.project-realisation {
+  padding: 90px 0;
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    font: 700  36px 'RobotoSlab', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  .graph-realisation {
+    position: relative;
+    max-width: 575px;
+    margin: 0 auto;
+    min-height: 860px;
+    background: url("../../img/graph-realisation.png") no-repeat 100% 100%;
+
+    p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 230px;
+      padding: 0 10px;
+      height: 100px;
+      box-shadow: 1px 2px 6px #000000;
+      border-radius: 50px;
+      transition: all .5s;
+
+
+
+      &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        color: #00b000;
+      }
+      }
+
+    .first-step {
+      position: absolute;
+      right: -125px;
+      top: 3.5%;
+    }
+
+    .second-step {
+      position: absolute;
+      left: -125px;
+      top: 14%;
+    }
+
+    .third-step {
+      position: absolute;
+      right: -125px;
+      top: 26%;
+    }
+
+    .fourth-step {
+      position: absolute;
+      left: -125px;
+      top: 38%;
+    }
+
+    .fifth-step {
+      position: absolute;
+      right: -125px;
+      top: 50%;
+    }
+
+    .sixth-step {
+      position: absolute;
+      left: -125px;
+      top: 62%;
+    }
+
+    .seventh-step {
+      position: absolute;
+      right: -125px;
+      top: 73.5%;
+    }
+
+    .eigth-step {
+      position: absolute;
+      left: -125px;
+      top: 84%;
+    }
+  }
+}

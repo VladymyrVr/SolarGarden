@@ -1,0 +1,14 @@
+.bottom-tab {
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00b000;
+    bottom: -10px;
+  }
+
+}

@@ -1,0 +1,125 @@
+.welcome-section {
+  transition: margin-left .5s;
+  height: 70vh;
+  position: relative;
+
+  .welcome-message {
+    display: block;
+    margin: 150px auto;
+    text-align: center;
+    width: inherit;
+
+
+      h2 {
+        font: 700 32px/32px 'RobotoSlab', sans-serif;
+        color: #ffffff;
+        margin-bottom: 10px;
+
+      }
+
+      p {
+        font-size: 24px;
+        color: #ffffff;
+        margin-bottom: 60px;
+        padding-bottom: 10px;
+        position: relative;
+      }
+  }
+
+  .background-player {
+    position: absolute;
+    height: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../../img/welcome-bc.png") no-repeat;
+    background-size: cover;
+    display: block;
+    z-index: -1;
+
+    .background-video-position {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-image: none;
+
+      .welcome-video {
+        margin: auto;
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        visibility: visible;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+
+  .responsive-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    transition:  0.5s;
+
+    .menu {
+      a:hover  {
+        transform: scale(1.2);
+        transition: .5s;
+        margin-left: 15px;
+      }
+    }
+
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      display: block;
+
+      span {
+        margin-right: 10px;
+      }
+    }
+
+    h2 {
+      color: #fff;
+      font: 400 26px 'RobotoSlab', sans-serif;
+      margin: 25px 0 30px 0;
+      padding-left: 30px;
+    }
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+    .fa-times {
+      font-size: 24px;
+    }
+  }
+
+  .responsive-menu a:hover {
+    color: #00b000;
+  }
+
+
+}

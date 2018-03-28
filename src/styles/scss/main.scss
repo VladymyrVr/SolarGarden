@@ -1,0 +1,26 @@
+@import "compass/css3";
+@import "compass/reset";
+
+@import "../../../node_modules/font-awesome/css/font-awesome.css";
+@import "../../../node_modules/slick-carousel/slick/slick.css";
+
+@import "general/fonts";
+@import "general/general";
+
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sections/welcome-section";
+@import "layout/sections/about-company";
+@import "layout/sections/video-reviews";
+@import "layout/sections/project-realisation";
+
+
+@import "components/bottom-tab";
+@import "components/services-list";
+@import "components/fixed-socail-netwroks";
+@import "components/call-button";
+@import "components/modal-call-back";
+@import "components/scroll-top-button";
+
+@import "general/responsive";
+

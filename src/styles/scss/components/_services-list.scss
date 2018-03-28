@@ -1,0 +1,274 @@
+.service-slider {
+  margin: -107px auto 65px auto;
+  text-align: center;
+
+
+  li {
+    max-width: 300px;
+    height: 140px;
+    border-radius: 30px;
+    padding-left: 30px;
+    background-color: #ebffec;
+    box-shadow: 3px 3px 6px  #000000, 0 0 2px #000000;
+    margin: 0 15px 0 0;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      background-color: #d6f2d8;
+      box-shadow:  0 3px 10px  #00b000 , 0 0 10px #000000;
+      a {
+        color: #4fb84f;
+      }
+    }
+
+    a {
+      text-transform: uppercase;
+      max-width: 180px;
+      height: inherit;
+      display: flex;
+      text-align: left;
+      align-items: center;
+      color: #000;
+      text-decoration: none;
+      line-height: 24px;
+      font-size: 18px;
+      font-weight: 600;
+      outline: none;
+
+    }
+  }
+
+  .sun-electrostation {
+    &::before {
+      content: '';
+      width: 67px;
+      height: 72px;
+      background: url("../../img/solar-panel.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .gelio-system {
+    &::before {
+      content: '';
+      width: 47px;
+      height: 72px;
+      background: url("../../img/pump.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .hot-system {
+    &::before {
+      content: '';
+      width: 78px;
+      height: 72px;
+      background: url("../../img/solar-systems.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .counter {
+    &::before {
+      content: '';
+      width: 53px;
+      height: 72px;
+      background: url("../../img/counter.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .lighting {
+    &::before {
+      content: '';
+      width: 47px;
+      height: 72px;
+      background: url("../../img/lighting.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .irrigation {
+    &::before {
+      content: '';
+      width: 63px;
+      height: 72px;
+      background: url("../../img/irrigation.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .green-traffic {
+    &::before {
+      content: '';
+      width: 74px;
+      height: 72px;
+      background: url("../../img/green-traffic.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .proecting {
+    &::before {
+      content: '';
+      width: 72px;
+      height: 72px;
+      background: url("../../img/proection.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .lawyer {
+    &::before {
+      content: '';
+      width: 82px;
+      height: 72px;
+      background: url("../../img/lawyer.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .garrantly {
+    &::before {
+      content: '';
+      width: 82px;
+      height: 72px;
+      background: url("../../img/handshake.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .consulting {
+    &::before {
+      content: '';
+      width: 74px;
+      height: 72px;
+      background: url("../../img/consulting.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .installation {
+    &::before {
+      content: '';
+      width: 72px;
+      height: 72px;
+      background: url("../../img/installation.png") no-repeat;
+      position: absolute;
+      display: block;
+      right: 25px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+
+  .slick-prev, .slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 64px;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: all .5s;
+  }
+
+  .slick-next {
+    right: -40px;
+
+
+    &:hover {
+      &::before {
+        color: #00b000;
+        transform: scale(1.5);
+
+      }
+    }
+    &::before {
+      content: "\f105";
+      display: block;
+      font-family: FontAwesome, sans-serif;
+      font-size: 72px;
+      color: rgba(0, 0, 0, .95);
+      transition: all .5s;
+    }
+  }
+
+  .slick-prev {
+    left: -60px;
+
+
+    &:hover {
+      &::before {
+        color: #00b000;
+        transform: scale(1.5);
+      }
+    }
+    &::before {
+      content: "\f104";
+      display: block;
+      font-family: FontAwesome, sans-serif;
+      font-size: 72px;
+      color: rgba(0, 0, 0, .95);
+      transition: all .5s;
+    }
+  }
+
+  .slick-slide>div {
+    padding: 3px 0;
+  }
+
+}

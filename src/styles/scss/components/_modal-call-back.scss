@@ -1,0 +1,154 @@
+.modal-callback {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 100000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  padding-top: 60px;
+
+  .modal-content {
+    background-color: rgba(0, 0, 0, .9);
+    margin: 8% auto 15% auto;
+    width: 40%;
+    padding: 40px 20px;
+    border-radius: 5px;
+    position: relative;
+
+    &:hover {
+      background-color: #000000;
+    }
+
+    .close-button {
+      font-size: 24px;
+      font-weight: 300;
+      color: #ffffff;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+
+
+
+      &:hover {
+        color: #00b000;
+      }
+    }
+
+    h2 {
+      color: #ffffff;
+      max-width: 450px;
+      text-align: center;
+      font-size: 22px;
+      margin: 15px auto 35px auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .submit-call {
+        margin-top: 25px;
+        width: 180px;
+        padding: 15px 0;
+        font-size: 18px;
+        border: 1px solid #00b000;
+        transition: all .7s;
+        outline: none;
+        background: #00b000;
+        color: #fff;
+        border-radius: 5px;
+
+
+        &:hover {
+          background: transparent;
+          cursor: pointer;
+          color: #00b000;
+        }
+      }
+    }
+
+    input {
+      width: calc(100% - 60px);
+      outline: none;
+      padding: 12px 30px;
+      margin: 10px auto;
+      background: transparent;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      font-size: 18px;
+      border-radius: 5px;
+
+
+      &::-webkit-input-placeholder {
+        color: #ffffff;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:focus {
+        border: 1px solid #00b000;
+
+        &::-webkit-input-placeholder {
+        opacity: 0;
+        }
+      }
+    }
+  }
+
+  .input-wrapper {
+    position: relative;
+    width: 50%;
+  }
+
+  .user-name-field {
+    &::before {
+      content: '\f007';
+      position: absolute;
+      font-family: FontAwesome, sans-serif;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      color: #00b000;
+      font-size: 18px;
+    }
+  }
+
+
+  .phone-field {
+    &::before {
+      content: '\f095';
+      position: absolute;
+      font-family: FontAwesome, sans-serif;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 10px;
+      color: #00b000;
+      font-size: 18px;
+    }
+  }
+
+
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+}

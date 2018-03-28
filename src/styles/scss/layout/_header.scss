@@ -1,0 +1,144 @@
+header {
+  margin: 0 25px;
+  padding-top: 20px;
+  height: 100px;
+  position: relative;
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0 30px;
+    border-radius: 15px;
+  }
+
+  .left-side {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list {
+    li {
+      display: inline-block;
+      margin-right: 35px;
+      position: relative;
+      transition: all .4s;
+
+      &::after {
+        content: "";
+        width: 0;
+        transition: width .4s;
+      }
+
+      &:hover {
+        color: #00b000;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          bottom: -10px;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          height: 2px;
+          background: #00b000;
+        }
+
+        & a {
+          color: #00b000;
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-family: 'RobotoSlab', sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      padding: 0 3px;
+    }
+
+  }
+
+  .active {
+    color: #00b000 !important;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      bottom: -10px;
+      margin: auto 0;
+      left: 0;
+      height: 2px;
+      background: #00b000;
+    }
+
+  }
+
+  .contact-mobile-info {
+    margin: 0 30px;
+
+    p {
+      color: #ffffff;
+      font: 300 16px 'RobotoSlab', sans-serif;
+      position: relative;
+    }
+
+    .lifecell::before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 16px;
+      background: url("../../img/lifecell-icon.png");
+    }
+
+  }
+
+  .language-panel {
+    display: flex;
+    flex-direction: column;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      margin-bottom: 5px;
+
+      &.active-lang {
+        color: #00b000;
+      }
+    }
+  }
+
+  .js-toggle-main-menu {
+    position: absolute;
+    color: #ffffff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
+    font-family: 'FontAwesome', sans-serif;
+    font-size: 24px;
+    display: none;
+
+
+    &:hover {
+      color: #00b000;
+      cursor: pointer;
+    }
+  }
+
+  .logo {
+    img{
+      width: 280px;
+    }
+
+  }
+
+}

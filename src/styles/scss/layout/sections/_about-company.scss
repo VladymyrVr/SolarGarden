@@ -1,0 +1,172 @@
+.about-company {
+  padding: 30px 0 30px 0;
+
+  h2 {
+    text-align: center;
+    font: 700  36px 'RobotoSlab', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .company-info {
+    margin-bottom: 100px;
+
+    &:last-child {
+      text-indent: 20px;
+    }
+    p {
+      text-align: justify;
+      margin-bottom: 3px;
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  @keyframes trambling-animation {
+    0%, 50%, 100% {
+      transform: rotate(0deg);
+    }
+    10%, 30% {
+      transform: rotate(-10deg);
+    }
+    20%, 40% {
+      transform: rotate(10deg);
+    }
+  }
+
+
+  .advantages-list, .advantages-list-2 {
+    padding-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+
+      width: 250px;
+      margin-bottom: 100px;
+      position: relative;
+
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover::before {
+        animation: 1.5s ease-in-out 0s normal none   running  trambling-animation;
+      }
+
+      p {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 700;
+      }
+    }
+
+    .proffesional-personal {
+      &::before {
+        width: 64px;
+        height: 72px;
+        background: url("../../img/prof-icon.png") no-repeat;
+        position: absolute;
+        content: '';
+        left: 50%;
+        margin-left: -32px;
+        top: -80px;
+      }
+    }
+
+      .wide-equipment  {
+        &::before {
+          width: 72px;
+          height: 68px;
+          background: url("../../img/shop.png") no-repeat;
+          position: absolute;
+          content: '';
+          left: 50%;
+          margin-left: -36px;
+          top: -76px;
+        }
+      }
+
+    .warrantly-service{
+      &::before {
+        width: 83px;
+        height: 72px;
+        background: url("../../img/handshake.png") no-repeat;
+        position: absolute;
+        content: '';
+        left: 50%;
+        margin-left: -41.5px;
+        top: -80px;
+      }
+    }
+
+    .business-planning {
+      &::before {
+        width: 74px;
+        height: 56px;
+        background: url("../../img/suitcase.png") no-repeat;
+        position: absolute;
+        content: '';
+        left: 50%;
+        margin-left: -37px;
+        top: -64px;
+      }
+    }
+
+    .free-shipping {
+      &::before {
+        width: 72px;
+        height: 72px;
+        background: url("../../img/delivery-truck.png") no-repeat;
+        background-size: cover;
+        position: absolute;
+        content: '';
+        left: 50%;
+        margin-left: -36px;
+        top: -70px;
+      }
+    }
+
+    .justificaton-proect {
+      &::before {
+        width: 74px;
+        height: 66px;
+        background: url("../../img/bar-chart.png") no-repeat;
+        position: absolute;
+        content: '';
+        left: 50%;
+        margin-left: -37px;
+        top: -74px;
+      }
+    }
+
+    .certificate-equipment {
+      &::before {
+        width: 64px;
+        height: 72px;
+        background: url("../../img/medal.png") no-repeat;
+        position: absolute;
+        content: '';
+        left: 50%;
+        margin-left: -32px;
+        top: -80px;
+      }
+    }
+
+    .reaction-master {
+      &::before {
+      width: 72px;
+      height: 74px;
+      background: url("../../img/online-support.png") no-repeat;
+      position: absolute;
+      content: '';
+      left: 50%;
+      margin-left: -36px;
+      top: -82px;
+    }
+    }
+    }
+  }
