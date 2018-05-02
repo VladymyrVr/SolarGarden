@@ -1,0 +1,36 @@
+.contact-section {
+  padding: 50px 0;
+
+  & .wrapper > h2 {
+    text-align: center;
+    font: 700 28px 'RobotoSlab', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+
+  }
+
+  .google-map {
+    display: block;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+
+  }
+
+  .contact-address {
+    width: calc(100% - 80px);
+    margin: 0 auto -30px auto;
+    z-index: 99999px;
+    box-shadow: -2px 2px 18px 3px rgba(0,0,0,0.28);
+    padding: 20px;
+    transition: transform .4s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+      box-shadow: -2px 2px 18px 3px #00b000;
+    }
+  }
+}

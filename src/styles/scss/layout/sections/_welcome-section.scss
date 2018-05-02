@@ -9,21 +9,20 @@
     text-align: center;
     width: inherit;
 
+    h2 {
+      font: 700 32px/32px 'RobotoSlab', sans-serif;
+      color: #ffffff;
+      margin-bottom: 10px;
 
-      h2 {
-        font: 700 32px/32px 'RobotoSlab', sans-serif;
-        color: #ffffff;
-        margin-bottom: 10px;
+    }
 
-      }
-
-      p {
-        font-size: 24px;
-        color: #ffffff;
-        margin-bottom: 60px;
-        padding-bottom: 10px;
-        position: relative;
-      }
+    p {
+      font-size: 24px;
+      color: #ffffff;
+      margin-bottom: 60px;
+      padding-bottom: 10px;
+      position: relative;
+    }
   }
 
   .background-player {
@@ -67,59 +66,59 @@
     }
   }
 
-  .responsive-menu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #000000;
-    overflow-x: hidden;
-    transition:  0.5s;
-
-    .menu {
-      a:hover  {
-        transform: scale(1.2);
-        transition: .5s;
-        margin-left: 15px;
-      }
-    }
-
-    a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 20px;
-      color: #fff;
-      display: block;
-
-      span {
-        margin-right: 10px;
-      }
-    }
-
-    h2 {
-      color: #fff;
-      font: 400 26px 'RobotoSlab', sans-serif;
-      margin: 25px 0 30px 0;
-      padding-left: 30px;
-    }
-  }
-
-  .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-
-    .fa-times {
-      font-size: 24px;
-    }
-  }
-
-  .responsive-menu a:hover {
-    color: #00b000;
-  }
-
-
 }
+
+.responsive-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  .menu {
+    a:hover {
+      transform: scale(1.2);
+      transition: .5s;
+      margin-left: 15px;
+    }
+  }
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+
+    span {
+      margin-right: 10px;
+    }
+  }
+
+  h2 {
+    color: #fff;
+    font: 400 26px 'RobotoSlab', sans-serif;
+    margin: 25px 0 30px 0;
+    padding-left: 30px;
+  }
+}
+
+.closebtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+
+  .fa-times {
+    font-size: 24px;
+  }
+}
+
+.responsive-menu a:hover {
+  color: #00b000;
+}
+

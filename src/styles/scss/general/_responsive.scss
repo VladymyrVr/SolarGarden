@@ -33,21 +33,19 @@
 }
 
 @media screen and(max-width: 1200px) {
-  .welcome-section {
-
-    .wrapper {
+    header .wrapper {
       justify-content: flex-end;
       padding: 0 40px 0 0;
     }
 
-    .js-toggle-main-menu {
+    header .js-toggle-main-menu {
       display: block;
     }
 
-    .left-side {
+    header .left-side {
       display: none;
     }
-  }
+
 
   .footer-main {
     justify-content: space-around;

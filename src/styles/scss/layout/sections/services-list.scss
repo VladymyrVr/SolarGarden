@@ -1,0 +1,97 @@
+.services-section {
+  padding: 70px;
+
+  h2 {
+    text-align: center;
+    font: 700 28px 'RobotoSlab', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+  }
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  li {
+    text-align: center;
+    max-width: 275px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 25px 0;
+
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #000000;
+      font-weight: 700;
+    }
+
+    span {
+      margin: 0 auto 10px auto;
+      display: block;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+
+    .sun-electrostation {
+      background: url("../../img/solar-panel.png") no-repeat 50%;
+    }
+
+    .gelio-system {
+      background:  url("../../img/pump.png") no-repeat 50%;
+    }
+
+    .hot-system {
+      background: url("../../img/solar-systems.png") no-repeat 50%;
+    }
+
+    .counter {
+      background: url("../../img/counter.png") no-repeat 50%;
+    }
+
+    .lighting {
+      background: url("../../img/lighting.png") no-repeat 50%;
+    }
+
+    .irrigation {
+      background: url("../../img/irrigation.png") no-repeat 50%;
+    }
+
+    .green-traffic {
+      background:  url("../../img/green-traffic.png") no-repeat 50%;
+    }
+
+    .proecting {
+      background: url("../../img/proection.png") no-repeat 50%;
+    }
+
+    .lawyer {
+      background: url("../../img/lawyer.png") no-repeat 50%;
+    }
+
+    .consulting {
+      background: url("../../img/consulting.png") no-repeat 50%;
+    }
+
+    .garrantly {
+      background: url("../../img/handshake.png") no-repeat 50%;
+    }
+
+    .installation {
+      background: url("../../img/installation.png") no-repeat 50%;
+    }
+
+    &:hover {
+      background-color: rgb(235, 255, 236);
+
+      span {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+}

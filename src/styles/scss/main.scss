@@ -13,14 +13,22 @@
 @import "layout/sections/about-company";
 @import "layout/sections/video-reviews";
 @import "layout/sections/project-realisation";
+@import "layout/sections/services-list";
+@import "layout/sections/solar-station";
+@import "layout/sections/contact-section";
+@import "layout/sections/gallery-section";
+@import "layout/sections/gallery-content";
 
 
+@import "components/preload";
 @import "components/bottom-tab";
 @import "components/services-list";
+@import "components/breadcrumbs";
 @import "components/fixed-socail-netwroks";
 @import "components/call-button";
 @import "components/modal-call-back";
 @import "components/scroll-top-button";
+@import "components/contact-item";
 
 @import "general/responsive";
 

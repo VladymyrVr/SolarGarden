@@ -2,10 +2,6 @@ $(document).ready(function () {
 
     var h = $(window).height();
     $(window).scroll(function () {
-        if (($(this).scrollTop() + h) >= $("#header-company").offset().top) {
-            $("#header-company h2").css({visibility: "visible"});
-            $("#header-company h2").addClass('animated zoomIn');
-        }
         if (($(this).scrollTop() + h) >= $("#animate-contact-wrapper").offset().top) {
             $("#animate-contact-wrapper li").css({visibility: "visible"});
             $("#animate-contact-wrapper li").addClass('animated zoomIn');

@@ -16,3 +16,64 @@ body {
   height: inherit;
 }
 
+
+.page-sub-header {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 95px;
+    height: 2px;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00b000;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 95px;
+    height: 2px;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #00b000;
+  }
+}
+
+.navigation-section {
+  padding: 20px 0 50px 0;
+  background: url("../../img/background-nav.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+table, tr, td {
+  border: 1px solid black;
+
+}
+
+table {
+  td {
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.align-justify {
+  text-align: justify;
+}

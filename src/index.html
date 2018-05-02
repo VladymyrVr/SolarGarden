@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="styles/stylesheets/animate.css">
 </head>
 <body>
+<div class="preloader-wrapper">
+    <div class="preloader">
+        <img src="img/preload.gif" alt="preload">
+    </div>
+</div>
 <section class="welcome-section" id="welcome">
     <div class="background-player">
         <div class="background-video-position">
@@ -21,11 +26,11 @@
         <h2>Меню</h2>
         <a class="closebtn" id="hide-btn"><span class="fa fa-times"></span></a>
         <ul class="menu small">
-            <li><a href="#"><span class="fa fa-home"></span> Главная</a></li>
+            <li><a href="index.html"><span class="fa fa-home"></span> Главная</a></li>
             <li><a href="html/services.html"><span class="fa fa-briefcase"></span> Услуги</a></li>
             <li><a href="#"><span class="fa fa-newspaper-o"></span> Новости</a></li>
-            <li><a href="#"><span class="fa fa-camera-retro"></span> Галерея</a></li>
-            <li><a href="#"><span class="fa fa-user-plus"></span> Контакты</a></li>
+            <li><a href="html/gallery.html"><span class="fa fa-camera-retro"></span> Галерея</a></li>
+            <li><a href="html/contact.html"><span class="fa fa-user-plus"></span> Контакты</a></li>
         </ul>
         <ul>
             <li><a href="">UA</a></li>
@@ -45,16 +50,12 @@
                         <li><a href="" class="active">Главная</a></li>
                         <li><a href="html/services.html">Услуги</a></li>
                         <li><a href="">Новости</a></li>
-                        <li><a href="">Галерея</a></li>
-                        <li><a href="">Контакты</a></li>
+                        <li><a href="html/gallery.html">Галерея</a></li>
+                        <li><a href="html/contact.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="contact-mobile-info">
                     <p class="lifecell">+380977355228</p>
-                </div>
-                <div class="language-panel">
-                    <a class="active-lang" href="">UA</a>
-                    <a href="">RU</a>
                 </div>
             </div>
         </div>
@@ -87,14 +88,27 @@
         <li><a href="" target="_blank" class="entypo-youtube"><span>Youtube</span></a></li>
     </ul>
     <button class="call-button"><span class="mobile-phone"></span></button>
-    <div class="modal-callback" id="modal-call"></div>
+    <div class="modal-callback" id="modal-call">
+        <div class="modal-content animate">
+            <h2>Введите ваши контактные данные мы  с вами свяжемся в ближайшое времья</h2>
+            <button class="close-button"></button>
+            <form>
+                <div class="input-wrapper user-name-field">
+                    <input type="text" autocomplete="off" placeholder="Введите ваше имья">
+                </div>
+                <div class="input-wrapper phone-field">
+                    <input id="phone-field" placeholder="Введите номер телефона"  type="text" autocomplete="off">
+                </div>
+                <button class="submit-call">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
     <button class="scroll-to-top"><i class="fa fa-caret-up" aria-hidden="true"></i></button>
-
 </section>
 <section class="about-company">
     <div class="wrapper">
         <ul class="service-slider">
-            <li><a class="sun-electrostation" href="">Солнечные электростанции</a></li>
+            <li><a class="sun-electrostation" href="html/solar-electrostation.html">Солнечные электростанции</a></li>
             <li><a class="gelio-system" href="">Гелиосистемы</a></li>
             <li><a class="hot-system" href="">Тепловые насосы</a></li>
             <li><a class="counter" href="">Счетчики и крепления</a></li>
@@ -139,7 +153,7 @@
         </ul>
     </div>
 </section>
-<section class="video-reviews">
+<section class="video-reviews">”
         <h2 class="bottom-tab">Отзывы</h2>
         <div class="flex-wrapper">
             <div class="video-wrapper">
@@ -213,6 +227,7 @@
 </footer>
 
 <script src="../node_modules/jquery/dist/jquery.js"></script>
+<script src="js/preload.js"></script>
 <script src="../node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
 <script src="../node_modules/slick-carousel/slick/slick.js"></script>
 <script src="js/sliderSettings.js"></script>

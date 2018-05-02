@@ -135,8 +135,13 @@ header {
   }
 
   .logo {
+    transition: transform .5s;
     img{
       width: 280px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
 
   }

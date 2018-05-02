@@ -91,6 +91,73 @@ body hgroup {
   height: inherit;
 }
 
+/* line 20, ../scss/general/_general.scss */
+.page-sub-header {
+  position: relative;
+}
+/* line 23, ../scss/general/_general.scss */
+.page-sub-header::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 95px;
+  height: 2px;
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00b000;
+}
+/* line 34, ../scss/general/_general.scss */
+.page-sub-header::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 95px;
+  height: 2px;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #00b000;
+}
+
+/* line 47, ../scss/general/_general.scss */
+.navigation-section {
+  padding: 20px 0 50px 0;
+  background: url("../../img/background-nav.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+
+/* line 53, ../scss/general/_general.scss */
+strong {
+  font-weight: 700;
+}
+
+/* line 57, ../scss/general/_general.scss */
+em {
+  font-style: italic;
+}
+
+/* line 61, ../scss/general/_general.scss */
+table, tr, td {
+  border: 1px solid black;
+}
+
+/* line 67, ../scss/general/_general.scss */
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* line 73, ../scss/general/_general.scss */
+.bold {
+  font-weight: 700;
+}
+
+/* line 77, ../scss/general/_general.scss */
+.align-justify {
+  text-align: justify;
+}
+
 /* line 1, ../scss/layout/_header.scss */
 header {
   margin: 0 25px;
@@ -222,15 +289,23 @@ header .js-toggle-main-menu:hover {
   color: #00b000;
   cursor: pointer;
 }
-/* line 138, ../scss/layout/_header.scss */
+/* line 137, ../scss/layout/_header.scss */
+header .logo {
+  transition: transform .5s;
+}
+/* line 139, ../scss/layout/_header.scss */
 header .logo img {
   width: 280px;
+}
+/* line 143, ../scss/layout/_header.scss */
+header .logo:hover {
+  transform: scale(1.1);
 }
 
 /* line 1, ../scss/layout/_footer.scss */
 footer {
   background: #000;
-  padding: 70px 0 25px 0;
+  padding: 40px 0 25px 0;
 }
 
 /* line 6, ../scss/layout/_footer.scss */
@@ -328,13 +403,13 @@ footer {
   text-align: center;
   width: inherit;
 }
-/* line 13, ../scss/layout/sections/_welcome-section.scss */
+/* line 12, ../scss/layout/sections/_welcome-section.scss */
 .welcome-section .welcome-message h2 {
   font: 700 32px/32px 'RobotoSlab', sans-serif;
   color: #ffffff;
   margin-bottom: 10px;
 }
-/* line 20, ../scss/layout/sections/_welcome-section.scss */
+/* line 19, ../scss/layout/sections/_welcome-section.scss */
 .welcome-section .welcome-message p {
   font-size: 24px;
   color: #ffffff;
@@ -342,7 +417,7 @@ footer {
   padding-bottom: 10px;
   position: relative;
 }
-/* line 29, ../scss/layout/sections/_welcome-section.scss */
+/* line 28, ../scss/layout/sections/_welcome-section.scss */
 .welcome-section .background-player {
   position: absolute;
   height: inherit;
@@ -355,7 +430,7 @@ footer {
   display: block;
   z-index: -1;
 }
-/* line 41, ../scss/layout/sections/_welcome-section.scss */
+/* line 40, ../scss/layout/sections/_welcome-section.scss */
 .welcome-section .background-player .background-video-position {
   position: absolute;
   z-index: -1;
@@ -369,7 +444,7 @@ footer {
   background-position: 50% 50%;
   background-image: none;
 }
-/* line 54, ../scss/layout/sections/_welcome-section.scss */
+/* line 53, ../scss/layout/sections/_welcome-section.scss */
 .welcome-section .background-player .background-video-position .welcome-video {
   margin: auto;
   position: absolute;
@@ -383,8 +458,9 @@ footer {
   width: auto;
   height: auto;
 }
-/* line 70, ../scss/layout/sections/_welcome-section.scss */
-.welcome-section .responsive-menu {
+
+/* line 71, ../scss/layout/sections/_welcome-section.scss */
+.responsive-menu {
   height: 100%;
   width: 0;
   position: fixed;
@@ -395,44 +471,46 @@ footer {
   overflow-x: hidden;
   transition: 0.5s;
 }
-/* line 82, ../scss/layout/sections/_welcome-section.scss */
-.welcome-section .responsive-menu .menu a:hover {
+/* line 83, ../scss/layout/sections/_welcome-section.scss */
+.responsive-menu .menu a:hover {
   transform: scale(1.2);
   transition: .5s;
   margin-left: 15px;
 }
-/* line 89, ../scss/layout/sections/_welcome-section.scss */
-.welcome-section .responsive-menu a {
+/* line 90, ../scss/layout/sections/_welcome-section.scss */
+.responsive-menu a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
   color: #fff;
   display: block;
 }
-/* line 96, ../scss/layout/sections/_welcome-section.scss */
-.welcome-section .responsive-menu a span {
+/* line 97, ../scss/layout/sections/_welcome-section.scss */
+.responsive-menu a span {
   margin-right: 10px;
 }
-/* line 101, ../scss/layout/sections/_welcome-section.scss */
-.welcome-section .responsive-menu h2 {
+/* line 102, ../scss/layout/sections/_welcome-section.scss */
+.responsive-menu h2 {
   color: #fff;
   font: 400 26px 'RobotoSlab', sans-serif;
   margin: 25px 0 30px 0;
   padding-left: 30px;
 }
-/* line 109, ../scss/layout/sections/_welcome-section.scss */
-.welcome-section .closebtn {
+
+/* line 110, ../scss/layout/sections/_welcome-section.scss */
+.closebtn {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
-/* line 115, ../scss/layout/sections/_welcome-section.scss */
-.welcome-section .closebtn .fa-times {
+/* line 116, ../scss/layout/sections/_welcome-section.scss */
+.closebtn .fa-times {
   font-size: 24px;
 }
-/* line 120, ../scss/layout/sections/_welcome-section.scss */
-.welcome-section .responsive-menu a:hover {
+
+/* line 121, ../scss/layout/sections/_welcome-section.scss */
+.responsive-menu a:hover {
   color: #00b000;
 }
 
@@ -725,6 +803,454 @@ footer {
   top: 84%;
 }
 
+/* line 1, ../scss/layout/sections/services-list.scss */
+.services-section {
+  padding: 70px;
+}
+/* line 4, ../scss/layout/sections/services-list.scss */
+.services-section h2 {
+  text-align: center;
+  font: 700 28px 'RobotoSlab', sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* line 13, ../scss/layout/sections/services-list.scss */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* line 18, ../scss/layout/sections/services-list.scss */
+.services-list li {
+  text-align: center;
+  max-width: 275px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 25px 0;
+}
+/* line 25, ../scss/layout/sections/services-list.scss */
+.services-list li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+}
+/* line 32, ../scss/layout/sections/services-list.scss */
+.services-list li span {
+  margin: 0 auto 10px auto;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+/* line 40, ../scss/layout/sections/services-list.scss */
+.services-list li .sun-electrostation {
+  background: url("../../img/solar-panel.png") no-repeat 50%;
+}
+/* line 44, ../scss/layout/sections/services-list.scss */
+.services-list li .gelio-system {
+  background: url("../../img/pump.png") no-repeat 50%;
+}
+/* line 48, ../scss/layout/sections/services-list.scss */
+.services-list li .hot-system {
+  background: url("../../img/solar-systems.png") no-repeat 50%;
+}
+/* line 52, ../scss/layout/sections/services-list.scss */
+.services-list li .counter {
+  background: url("../../img/counter.png") no-repeat 50%;
+}
+/* line 56, ../scss/layout/sections/services-list.scss */
+.services-list li .lighting {
+  background: url("../../img/lighting.png") no-repeat 50%;
+}
+/* line 60, ../scss/layout/sections/services-list.scss */
+.services-list li .irrigation {
+  background: url("../../img/irrigation.png") no-repeat 50%;
+}
+/* line 64, ../scss/layout/sections/services-list.scss */
+.services-list li .green-traffic {
+  background: url("../../img/green-traffic.png") no-repeat 50%;
+}
+/* line 68, ../scss/layout/sections/services-list.scss */
+.services-list li .proecting {
+  background: url("../../img/proection.png") no-repeat 50%;
+}
+/* line 72, ../scss/layout/sections/services-list.scss */
+.services-list li .lawyer {
+  background: url("../../img/lawyer.png") no-repeat 50%;
+}
+/* line 76, ../scss/layout/sections/services-list.scss */
+.services-list li .consulting {
+  background: url("../../img/consulting.png") no-repeat 50%;
+}
+/* line 80, ../scss/layout/sections/services-list.scss */
+.services-list li .garrantly {
+  background: url("../../img/handshake.png") no-repeat 50%;
+}
+/* line 84, ../scss/layout/sections/services-list.scss */
+.services-list li .installation {
+  background: url("../../img/installation.png") no-repeat 50%;
+}
+/* line 88, ../scss/layout/sections/services-list.scss */
+.services-list li:hover {
+  background-color: #ebffec;
+}
+/* line 91, ../scss/layout/sections/services-list.scss */
+.services-list li:hover span {
+  background-color: #ffffff;
+}
+
+/* line 1, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper {
+  padding: 40px;
+}
+/* line 4, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .wrapper {
+  display: flex;
+}
+/* line 8, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .left-panel {
+  max-width: 300px;
+  width: 100%;
+  margin-right: 20px;
+}
+/* line 13, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .left-panel .facebook-banner {
+  margin: 25px 0;
+  border-radius: 10px;
+  transition: .5s;
+}
+/* line 18, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .left-panel .facebook-banner:hover {
+  box-shadow: 0 0 10px #000;
+  transform: scale(1.05);
+}
+/* line 24, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .left-panel .solar-navigation {
+  display: flex;
+  flex-direction: column;
+  background: #ebffec;
+  padding: 25px 15px;
+  border-radius: 10px;
+}
+/* line 31, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .left-panel .solar-navigation a {
+  text-transform: uppercase;
+  padding-left: 30px;
+  position: relative;
+  text-decoration: none;
+  margin-bottom: 25px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #000;
+  max-width: 250px;
+  transition: all .3s;
+}
+/* line 44, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .left-panel .solar-navigation a::before {
+  transition: all .3s;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../../img/sun-icon.png") no-repeat;
+}
+/* line 57, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .left-panel .solar-navigation a:hover {
+  color: #00b000;
+}
+/* line 65, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content {
+  max-width: calc(100% - 265px);
+  width: 100%;
+}
+/* line 68, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content img {
+  width: 80%;
+  height: auto;
+  border-radius: 5px;
+  display: block;
+  margin: 15px auto 20px auto;
+  transition: all .5s;
+}
+/* line 76, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content img:hover {
+  box-shadow: 0 0 10px #000;
+  transform: scale(1.05);
+}
+/* line 82, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content ol {
+  list-style: decimal;
+  list-style-position: inside;
+  margin-top: 10px;
+}
+/* line 87, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content ol li {
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+/* line 95, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content ul {
+  margin-top: 10px;
+}
+/* line 99, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content ul li {
+  background: url("../../img/sun-icon.png") no-repeat 0 50%;
+  padding-left: 30px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 15px 15px;
+}
+/* line 109, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content h2 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 30px 0;
+}
+/* line 116, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content h2 strong {
+  display: inline-block;
+}
+/* line 121, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  text-indent: 20px;
+}
+/* line 131, ../scss/layout/sections/_solar-station.scss */
+.services-content-wrapper .solar-station-content h1 {
+  text-align: center;
+  position: relative;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+/* line 1, ../scss/layout/sections/_contact-section.scss */
+.contact-section {
+  padding: 50px 0;
+}
+/* line 4, ../scss/layout/sections/_contact-section.scss */
+.contact-section .wrapper > h2 {
+  text-align: center;
+  font: 700 28px 'RobotoSlab', sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 50px;
+}
+/* line 14, ../scss/layout/sections/_contact-section.scss */
+.contact-section .google-map {
+  display: block;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+}
+/* line 22, ../scss/layout/sections/_contact-section.scss */
+.contact-section .contact-address {
+  width: calc(100% - 80px);
+  margin: 0 auto -30px auto;
+  z-index: 99999px;
+  box-shadow: -2px 2px 18px 3px rgba(0, 0, 0, 0.28);
+  padding: 20px;
+  transition: transform .4s;
+}
+/* line 30, ../scss/layout/sections/_contact-section.scss */
+.contact-section .contact-address:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: -2px 2px 18px 3px #00b000;
+}
+
+/* line 1, ../scss/layout/sections/_gallery-section.scss */
+.gallery-section {
+  padding: 50px 0;
+}
+/* line 4, ../scss/layout/sections/_gallery-section.scss */
+.gallery-section h2 {
+  text-align: center;
+  font: 700 28px 'RobotoSlab', sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+/* line 14, ../scss/layout/sections/_gallery-section.scss */
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 18, ../scss/layout/sections/_gallery-section.scss */
+.gallery-list li {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+/* line 24, ../scss/layout/sections/_gallery-section.scss */
+.gallery-list li:hover .object-describe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+}
+/* line 31, ../scss/layout/sections/_gallery-section.scss */
+.gallery-list li:hover img {
+  transform: scale(1.25);
+}
+/* line 36, ../scss/layout/sections/_gallery-section.scss */
+.gallery-list li .object-describe {
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1) 0s;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 45, ../scss/layout/sections/_gallery-section.scss */
+.gallery-list li .object-describe P {
+  font-size: 24px;
+  color: #ffffff;
+}
+/* line 51, ../scss/layout/sections/_gallery-section.scss */
+.gallery-list li span {
+  display: block;
+}
+/* line 54, ../scss/layout/sections/_gallery-section.scss */
+.gallery-list li span img {
+  transition: all .5s;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
+
+/* line 1, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content {
+  padding: 50px 0;
+}
+/* line 3, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper {
+  display: flex;
+}
+/* line 6, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .photo-lightgallery {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* line 11, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .photo-lightgallery a {
+  display: block;
+  width: 50%;
+  max-height: 250px;
+  position: relative;
+}
+/* line 17, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .photo-lightgallery a:hover::before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 28, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .photo-lightgallery a:hover::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../img/zoom.png") no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* line 40, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .photo-lightgallery a img {
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 49, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .object-describe {
+  width: calc(50% - 40px);
+  padding: 10px 20px;
+}
+/* line 53, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .object-describe h2 {
+  text-align: center;
+  font: 700 20px 'RobotoSlab', sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 30px;
+}
+/* line 62, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .object-describe p {
+  text-align: justify;
+  text-indent: 10px;
+  font: 16px/24px 'RobotoSlab', sans-serif;
+}
+/* line 68, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .object-describe ul {
+  margin-top: 10px;
+}
+/* line 72, ../scss/layout/sections/_gallery-content.scss */
+.gallery-content .wrapper .object-describe ul li {
+  background: url("../../img/sun-icon.png") no-repeat 0 50%;
+  padding-left: 30px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 15px 15px;
+}
+
+/* line 1, ../scss/components/_preload.scss */
+body.preloader-site {
+  overflow: hidden;
+}
+
+/* line 5, ../scss/components/_preload.scss */
+.preloader-wrapper {
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+/* line 15, ../scss/components/_preload.scss */
+.preloader-wrapper .preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 64px;
+}
+
 /* line 3, ../scss/components/_bottom-tab.scss */
 .bottom-tab::before {
   position: absolute;
@@ -981,6 +1507,32 @@ footer {
   padding: 3px 0;
 }
 
+/* line 1, ../scss/components/_breadcrumbs.scss */
+.breadcrumb-navigation {
+  margin-top: 20px;
+}
+/* line 4, ../scss/components/_breadcrumbs.scss */
+.breadcrumb-navigation li {
+  display: inline-block;
+}
+/* line 7, ../scss/components/_breadcrumbs.scss */
+.breadcrumb-navigation li + li:before {
+  padding: 8px;
+  color: #ffffff;
+  content: "/\00a0";
+}
+/* line 13, ../scss/components/_breadcrumbs.scss */
+.breadcrumb-navigation li a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+/* line 19, ../scss/components/_breadcrumbs.scss */
+.breadcrumb-navigation li span {
+  color: #00b000;
+  font-size: 16px;
+}
+
 /* line 1, ../scss/components/_fixed-socail-netwroks.scss */
 .social-networks-list {
   right: 0;
@@ -1072,7 +1624,7 @@ footer {
   box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.5);
   opacity: .85;
   cursor: pointer;
-  z-index: 9999;
+  z-index: 999;
 }
 /* line 16, ../scss/components/_call-button.scss */
 .call-button:hover {
@@ -1145,17 +1697,19 @@ footer {
 }
 /* line 26, ../scss/components/_modal-call-back.scss */
 .modal-callback .modal-content .close-button {
-  font-size: 24px;
-  font-weight: 300;
-  color: #ffffff;
+  width: 24px;
+  height: 24px;
   position: absolute;
   right: 10px;
   top: 10px;
   cursor: pointer;
+  background: url("../../img/close.png") no-repeat;
+  border: none;
+  outline: none;
 }
 /* line 37, ../scss/components/_modal-call-back.scss */
 .modal-callback .modal-content .close-button:hover {
-  color: #00b000;
+  background: url("../../img/close-active.png") no-repeat;
 }
 /* line 42, ../scss/components/_modal-call-back.scss */
 .modal-callback .modal-content h2 {
@@ -1290,6 +1844,72 @@ footer {
   color: #00b000;
 }
 
+/* line 1, ../scss/components/_contact-item.scss */
+.contact-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/* line 6, ../scss/components/_contact-item.scss */
+.contact-list li {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  padding: 20px;
+  box-shadow: -2px 2px 18px 3px rgba(0, 0, 0, 0.28);
+  width: 100%;
+  margin-bottom: 40px;
+  transition: transform .4s;
+}
+/* line 16, ../scss/components/_contact-item.scss */
+.contact-list li:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: -2px 2px 18px 3px #00b000;
+}
+
+/* line 25, ../scss/components/_contact-item.scss */
+.contact-info h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+/* line 32, ../scss/components/_contact-item.scss */
+.contact-info .work-schedule {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+}
+/* line 38, ../scss/components/_contact-item.scss */
+.contact-info .phone-number {
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+}
+/* line 45, ../scss/components/_contact-item.scss */
+.contact-info .contact-email {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  color: #00b000;
+}
+
+/* line 54, ../scss/components/_contact-item.scss */
+.contact-img-wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+/* line 61, ../scss/components/_contact-item.scss */
+.contact-img-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 1300px) {
   /* line 3, ../scss/general/_responsive.scss */
   .service-slider li {
@@ -1320,100 +1940,102 @@ footer {
   }
 }
 @media screen and (max-width: 1200px) {
-  /* line 38, ../scss/general/_responsive.scss */
-  .welcome-section .wrapper {
+  /* line 36, ../scss/general/_responsive.scss */
+  header .wrapper {
     justify-content: flex-end;
     padding: 0 40px 0 0;
   }
-  /* line 43, ../scss/general/_responsive.scss */
-  .welcome-section .js-toggle-main-menu {
+
+  /* line 41, ../scss/general/_responsive.scss */
+  header .js-toggle-main-menu {
     display: block;
   }
-  /* line 47, ../scss/general/_responsive.scss */
-  .welcome-section .left-side {
+
+  /* line 45, ../scss/general/_responsive.scss */
+  header .left-side {
     display: none;
   }
 
-  /* line 52, ../scss/general/_responsive.scss */
+  /* line 50, ../scss/general/_responsive.scss */
   .footer-main {
     justify-content: space-around;
   }
-  /* line 56, ../scss/general/_responsive.scss */
+  /* line 54, ../scss/general/_responsive.scss */
   .footer-main .footer-nav-list li {
     display: block;
     margin: 0 0 3px 0;
   }
 
-  /* line 64, ../scss/general/_responsive.scss */
+  /* line 62, ../scss/general/_responsive.scss */
   .about-company .company-info {
     padding: 0 20px;
   }
 }
 @media screen and (max-width: 1025px) {
-  /* line 72, ../scss/general/_responsive.scss */
+  /* line 70, ../scss/general/_responsive.scss */
   .about-company .advantages-list {
     justify-content: space-around;
   }
-  /* line 74, ../scss/general/_responsive.scss */
+  /* line 72, ../scss/general/_responsive.scss */
   .about-company .advantages-list li {
     width: 50%;
   }
-  /* line 77, ../scss/general/_responsive.scss */
+  /* line 75, ../scss/general/_responsive.scss */
   .about-company .advantages-list li:nth-child(3) {
     margin-bottom: 50px;
   }
-  /* line 81, ../scss/general/_responsive.scss */
+  /* line 79, ../scss/general/_responsive.scss */
   .about-company .advantages-list li:nth-child(4) {
     margin-bottom: 50px;
   }
-  /* line 85, ../scss/general/_responsive.scss */
+  /* line 83, ../scss/general/_responsive.scss */
   .about-company .advantages-list li p {
     max-width: 250px;
     margin: auto;
   }
-  /* line 92, ../scss/general/_responsive.scss */
+  /* line 90, ../scss/general/_responsive.scss */
   .about-company .advantages-list-2 {
     justify-content: space-around;
   }
-  /* line 94, ../scss/general/_responsive.scss */
+  /* line 92, ../scss/general/_responsive.scss */
   .about-company .advantages-list-2 li {
     width: 50%;
   }
-  /* line 97, ../scss/general/_responsive.scss */
+  /* line 95, ../scss/general/_responsive.scss */
   .about-company .advantages-list-2 li p {
     max-width: 250px;
     margin: auto;
   }
 
-  /* line 106, ../scss/general/_responsive.scss */
+  /* line 104, ../scss/general/_responsive.scss */
   .modal-callback .input-wrapper {
     width: 75%;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 114, ../scss/general/_responsive.scss */
+  /* line 112, ../scss/general/_responsive.scss */
   .footer-main {
     flex-direction: column;
   }
-  /* line 117, ../scss/general/_responsive.scss */
+  /* line 115, ../scss/general/_responsive.scss */
   .footer-main .logo {
     display: block;
     margin-bottom: 25px;
   }
-  /* line 122, ../scss/general/_responsive.scss */
+  /* line 120, ../scss/general/_responsive.scss */
   .footer-main .footer-nav-list {
     margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 840px) {
-  /* line 130, ../scss/general/_responsive.scss */
+  /* line 128, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation {
     background: transparent;
     flex-direction: column;
     display: flex;
     align-items: center;
   }
-  /* line 136, ../scss/general/_responsive.scss */
+  /* line 134, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation p {
     position: relative !important;
     left: 0 !important;
@@ -1421,7 +2043,7 @@ footer {
     top: 0;
     margin-bottom: 75px;
   }
-  /* line 144, ../scss/general/_responsive.scss */
+  /* line 142, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .first-step::before {
     content: '01';
     text-align: center;
@@ -1441,7 +2063,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  /* line 164, ../scss/general/_responsive.scss */
+  /* line 162, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .first-step::after {
     content: '\f0d7';
     font-family: FontAwesome, sans-serif;
@@ -1453,7 +2075,7 @@ footer {
     right: 0;
     margin: 0 auto;
   }
-  /* line 176, ../scss/general/_responsive.scss */
+  /* line 174, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .second-step::before {
     content: '02';
     text-align: center;
@@ -1473,7 +2095,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  /* line 196, ../scss/general/_responsive.scss */
+  /* line 194, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .second-step::after {
     content: '\f0d7';
     font-family: FontAwesome, sans-serif;
@@ -1485,7 +2107,7 @@ footer {
     right: 0;
     margin: 0 auto;
   }
-  /* line 208, ../scss/general/_responsive.scss */
+  /* line 206, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .third-step::before {
     content: '03';
     text-align: center;
@@ -1505,7 +2127,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  /* line 228, ../scss/general/_responsive.scss */
+  /* line 226, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .third-step::after {
     content: '\f0d7';
     font-family: FontAwesome, sans-serif;
@@ -1517,7 +2139,7 @@ footer {
     right: 0;
     margin: 0 auto;
   }
-  /* line 240, ../scss/general/_responsive.scss */
+  /* line 238, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .fourth-step::before {
     content: '04';
     text-align: center;
@@ -1537,7 +2159,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  /* line 260, ../scss/general/_responsive.scss */
+  /* line 258, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .fourth-step::after {
     content: '\f0d7';
     font-family: FontAwesome, sans-serif;
@@ -1549,7 +2171,7 @@ footer {
     right: 0;
     margin: 0 auto;
   }
-  /* line 272, ../scss/general/_responsive.scss */
+  /* line 270, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .fifth-step::before {
     content: '05';
     text-align: center;
@@ -1569,7 +2191,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  /* line 292, ../scss/general/_responsive.scss */
+  /* line 290, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .fifth-step::after {
     content: '\f0d7';
     font-family: FontAwesome, sans-serif;
@@ -1581,7 +2203,7 @@ footer {
     right: 0;
     margin: 0 auto;
   }
-  /* line 304, ../scss/general/_responsive.scss */
+  /* line 302, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .sixth-step::before {
     content: '06';
     text-align: center;
@@ -1601,7 +2223,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  /* line 324, ../scss/general/_responsive.scss */
+  /* line 322, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .sixth-step::after {
     content: '\f0d7';
     font-family: FontAwesome, sans-serif;
@@ -1613,7 +2235,7 @@ footer {
     right: 0;
     margin: 0 auto;
   }
-  /* line 336, ../scss/general/_responsive.scss */
+  /* line 334, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .seventh-step::before {
     content: '07';
     text-align: center;
@@ -1633,7 +2255,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  /* line 356, ../scss/general/_responsive.scss */
+  /* line 354, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .seventh-step::after {
     content: '\f0d7';
     font-family: FontAwesome, sans-serif;
@@ -1645,7 +2267,7 @@ footer {
     right: 0;
     margin: 0 auto;
   }
-  /* line 368, ../scss/general/_responsive.scss */
+  /* line 366, ../scss/general/_responsive.scss */
   .project-realisation .graph-realisation .eigth-step::before {
     content: '08';
     text-align: center;
@@ -1666,96 +2288,96 @@ footer {
     align-items: center;
   }
 
-  /* line 392, ../scss/general/_responsive.scss */
+  /* line 390, ../scss/general/_responsive.scss */
   .modal-callback .modal-content h2 {
     font-size: 18px;
   }
-  /* line 396, ../scss/general/_responsive.scss */
+  /* line 394, ../scss/general/_responsive.scss */
   .modal-callback .modal-content input {
     font-size: 16px;
   }
-  /* line 401, ../scss/general/_responsive.scss */
+  /* line 399, ../scss/general/_responsive.scss */
   .modal-callback .modal-content form .submit-call {
     font-size: 16px;
   }
 }
 @media screen and (max-width: 690px) {
-  /* line 414, ../scss/general/_responsive.scss */
+  /* line 412, ../scss/general/_responsive.scss */
   .about-company .company-info p {
     font-size: 16px;
   }
 
-  /* line 421, ../scss/general/_responsive.scss */
+  /* line 419, ../scss/general/_responsive.scss */
   .modal-callback .modal-content {
     width: 60%;
   }
-  /* line 423, ../scss/general/_responsive.scss */
+  /* line 421, ../scss/general/_responsive.scss */
   .modal-callback .modal-content h2 {
     font-size: 16px;
   }
-  /* line 427, ../scss/general/_responsive.scss */
+  /* line 425, ../scss/general/_responsive.scss */
   .modal-callback .modal-content input {
     font-size: 14px;
   }
-  /* line 432, ../scss/general/_responsive.scss */
+  /* line 430, ../scss/general/_responsive.scss */
   .modal-callback .modal-content form .submit-call {
     font-size: 14px;
   }
 
-  /* line 441, ../scss/general/_responsive.scss */
+  /* line 439, ../scss/general/_responsive.scss */
   .welcome-section .wrapper {
     padding: 0 20px;
     background: transparent;
   }
-  /* line 446, ../scss/general/_responsive.scss */
+  /* line 444, ../scss/general/_responsive.scss */
   .welcome-section header {
     background-color: rgba(0, 0, 0, 0.8);
     margin: 0;
     height: 80px;
   }
-  /* line 452, ../scss/general/_responsive.scss */
+  /* line 450, ../scss/general/_responsive.scss */
   .welcome-section header .logo img {
     width: 200px;
   }
 }
 @media screen and (max-width: 630px) {
-  /* line 462, ../scss/general/_responsive.scss */
+  /* line 460, ../scss/general/_responsive.scss */
   .service-slider li {
     max-width: 325px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 472, ../scss/general/_responsive.scss */
+  /* line 470, ../scss/general/_responsive.scss */
   .about-company .company-info {
     margin-bottom: 50px;
   }
-  /* line 476, ../scss/general/_responsive.scss */
+  /* line 474, ../scss/general/_responsive.scss */
   .about-company .advantages-list {
     justify-content: space-around;
   }
-  /* line 478, ../scss/general/_responsive.scss */
+  /* line 476, ../scss/general/_responsive.scss */
   .about-company .advantages-list li {
     width: 100%;
   }
-  /* line 481, ../scss/general/_responsive.scss */
+  /* line 479, ../scss/general/_responsive.scss */
   .about-company .advantages-list li:nth-child(3) {
     margin-bottom: 100px;
   }
-  /* line 485, ../scss/general/_responsive.scss */
+  /* line 483, ../scss/general/_responsive.scss */
   .about-company .advantages-list li p {
     max-width: 250px;
     margin: auto;
     font-size: 16px;
   }
-  /* line 493, ../scss/general/_responsive.scss */
+  /* line 491, ../scss/general/_responsive.scss */
   .about-company .advantages-list-2 {
     justify-content: space-around;
   }
-  /* line 495, ../scss/general/_responsive.scss */
+  /* line 493, ../scss/general/_responsive.scss */
   .about-company .advantages-list-2 li {
     width: 100%;
   }
-  /* line 498, ../scss/general/_responsive.scss */
+  /* line 496, ../scss/general/_responsive.scss */
   .about-company .advantages-list-2 li p {
     max-width: 250px;
     margin: auto;
@@ -1763,35 +2385,35 @@ footer {
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 510, ../scss/general/_responsive.scss */
+  /* line 508, ../scss/general/_responsive.scss */
   .modal-callback .modal-content {
     width: 70%;
   }
-  /* line 512, ../scss/general/_responsive.scss */
+  /* line 510, ../scss/general/_responsive.scss */
   .modal-callback .modal-content h2 {
     font-size: 14px;
   }
-  /* line 516, ../scss/general/_responsive.scss */
+  /* line 514, ../scss/general/_responsive.scss */
   .modal-callback .modal-content input {
     font-size: 12px;
   }
-  /* line 521, ../scss/general/_responsive.scss */
+  /* line 519, ../scss/general/_responsive.scss */
   .modal-callback .modal-content form .submit-call {
     font-size: 12px;
   }
 
-  /* line 528, ../scss/general/_responsive.scss */
+  /* line 526, ../scss/general/_responsive.scss */
   .call-button {
     width: 52px;
     height: 52px;
   }
-  /* line 532, ../scss/general/_responsive.scss */
+  /* line 530, ../scss/general/_responsive.scss */
   .call-button .mobile-phone {
     width: 32px;
     height: 32px;
   }
 
-  /* line 538, ../scss/general/_responsive.scss */
+  /* line 536, ../scss/general/_responsive.scss */
   .scroll-to-top {
     width: 52px;
     height: 52px;
@@ -1799,36 +2421,36 @@ footer {
     bottom: 100px;
   }
 
-  /* line 545, ../scss/general/_responsive.scss */
+  /* line 543, ../scss/general/_responsive.scss */
   .social-networks-list a {
     width: 40px;
     height: 40px;
   }
-  /* line 549, ../scss/general/_responsive.scss */
+  /* line 547, ../scss/general/_responsive.scss */
   .social-networks-list a::before {
     font-size: 20px;
   }
 
-  /* line 555, ../scss/general/_responsive.scss */
+  /* line 553, ../scss/general/_responsive.scss */
   .logo img {
     width: 200px;
   }
 
-  /* line 560, ../scss/general/_responsive.scss */
+  /* line 558, ../scss/general/_responsive.scss */
   .project-realisation {
     padding: 40px 0;
   }
 
-  /* line 564, ../scss/general/_responsive.scss */
+  /* line 562, ../scss/general/_responsive.scss */
   .about-company {
     padding: 40px 0 20px 0;
   }
 
-  /* line 569, ../scss/general/_responsive.scss */
+  /* line 567, ../scss/general/_responsive.scss */
   .welcome-section .wrapper {
     padding: 0 20px 0 0;
   }
-  /* line 574, ../scss/general/_responsive.scss */
+  /* line 572, ../scss/general/_responsive.scss */
   .welcome-section .js-toggle-main-menu {
     left: 20px;
   }

@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     $('.close-button').click(function () {
         $('.modal-callback').css('display', 'none')
-    })
+    });
 
     var modal = document.getElementById('modal-call');
 

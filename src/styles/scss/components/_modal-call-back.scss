@@ -24,18 +24,18 @@
     }
 
     .close-button {
-      font-size: 24px;
-      font-weight: 300;
-      color: #ffffff;
+      width: 24px;
+      height: 24px;
       position: absolute;
       right: 10px;
       top: 10px;
       cursor: pointer;
-
-
+      background: url("../../img/close.png") no-repeat;
+      border: none;
+      outline: none;
 
       &:hover {
-        color: #00b000;
+        background: url("../../img/close-active.png") no-repeat;
       }
     }
 
