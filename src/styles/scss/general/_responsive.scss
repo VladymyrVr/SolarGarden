@@ -434,7 +434,9 @@
     }
   }
 
-  .welcome-section {
+  .navigation-section {
+    padding: 0 0 50px 0;
+  }
 
     .wrapper {
       padding: 0 20px;
@@ -452,7 +454,6 @@
         }
       }
     }
-  }
 }
 
 @media screen and(max-width: 630px) {

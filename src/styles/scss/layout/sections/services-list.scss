@@ -93,5 +93,22 @@
       }
     }
   }
+}
 
+
+@media all and (max-width: 1000px) {
+  .services-list {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 760px) {
+  .services-section {
+    h2 {
+      font-size: 22px;
+    }
+  }
+  .services-list {
+    justify-content: center;
+  }
 }

@@ -97,3 +97,21 @@
 .services-list li:hover span {
   background-color: #ffffff;
 }
+
+@media all and (max-width: 1000px) {
+  /* line 100, ../../../scss/layout/sections/services-list.scss */
+  .services-list {
+    justify-content: space-around;
+  }
+}
+@media all and (max-width: 760px) {
+  /* line 107, ../../../scss/layout/sections/services-list.scss */
+  .services-section h2 {
+    font-size: 22px;
+  }
+
+  /* line 111, ../../../scss/layout/sections/services-list.scss */
+  .services-list {
+    justify-content: center;
+  }
+}

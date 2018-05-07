@@ -10,6 +10,7 @@ header {
     align-items: center;
     background-color: rgba(0, 0, 0, .5);
     padding: 0 30px;
+    position: relative;
     border-radius: 15px;
   }
 
@@ -83,21 +84,14 @@ header {
     margin: 0 30px;
 
     p {
+      margin-bottom: 5px;
       color: #ffffff;
       font: 300 16px 'RobotoSlab', sans-serif;
       position: relative;
-    }
 
-    .lifecell::before {
-      content: '';
-      display: inline-block;
-      position: absolute;
-      left: -20px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 16px;
-      height: 16px;
-      background: url("../../img/lifecell-icon.png");
+      .kyivstar {
+        color: #5282FF;
+      }
     }
 
   }

@@ -138,3 +138,46 @@
   }
 
 }
+
+@media screen and (max-width: 860px) {
+  .services-content-wrapper {
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .left-panel {
+      .facebook-banner{
+        display: none;
+      }
+
+      .solar-navigation {
+        a {
+          text-align: center;
+        }
+      }
+    }
+
+
+    .solar-station-content {
+      margin-top: 25px;
+      max-width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen  and(max-width: 500px){
+  .services-content-wrapper {
+    .left-panel {
+      .solar-navigation {
+        a {
+            font-size: 14px;
+        }
+      }
+    }
+  }
+}

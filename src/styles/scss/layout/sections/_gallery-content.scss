@@ -2,6 +2,8 @@
   padding: 50px 0;
   .wrapper {
     display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 
     .photo-lightgallery {
       width: 50%;
@@ -76,6 +78,38 @@
           font-size: 16px;
           line-height: 24px;
           margin: 0 0 15px 15px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .gallery-content {
+    .wrapper {
+      justify-content: center;
+      .photo-lightgallery {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+
+      .object-describe {
+        width: calc(90% - 40px);
+
+        h2 {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 420px){
+  .gallery-content {
+    .wrapper {
+      .photo-lightgallery {
+        a {
+          width: 100%;
         }
       }
     }

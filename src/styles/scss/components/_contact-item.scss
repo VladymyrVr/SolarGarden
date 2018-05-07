@@ -64,3 +64,17 @@
   }
 }
 
+@media screen  and(max-width: 500px) {
+  .contact-list li {
+    flex-direction: column;
+
+    .contact-img-wrapper {
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      text-align: center;
+    }
+  }
+}
+

@@ -23,7 +23,6 @@
         </div>
     </div>
     <div class="responsive-menu" id="responsive-menu">
-        <h2>Меню</h2>
         <a class="closebtn" id="hide-btn"><span class="fa fa-times"></span></a>
         <ul class="menu small">
             <li><a href="index.html"><span class="fa fa-home"></span> Главная</a></li>
@@ -31,10 +30,6 @@
             <li><a href="#"><span class="fa fa-newspaper-o"></span> Новости</a></li>
             <li><a href="html/gallery.html"><span class="fa fa-camera-retro"></span> Галерея</a></li>
             <li><a href="html/contact.html"><span class="fa fa-user-plus"></span> Контакты</a></li>
-        </ul>
-        <ul>
-            <li><a href="">UA</a></li>
-            <li><a href="">RU</a></li>
         </ul>
     </div>
     <header>
@@ -55,7 +50,8 @@
                     </ul>
                 </nav>
                 <div class="contact-mobile-info">
-                    <p class="lifecell">+380977355228</p>
+                    <p>+38 (<span class="kyivstar">067</span>) -367-91-99</p>
+                    <p >+38 (<span class="kyivstar">067</span>) -182-71-77</p>
                 </div>
             </div>
         </div>
@@ -85,7 +81,7 @@
         <li>
             <a href="https://www.facebook.com/Solar-Garden-1856629381252890/?notif_id=1520012500044864&notif_t=page_invite&ref=notif"
                target="_blank" class="entypo-facebook"><span>Facebook</span></a></li>
-        <li><a href="" target="_blank" class="entypo-youtube"><span>Youtube</span></a></li>
+        <li><a href="https://www.youtube.com/channel/UC3FnVd4cAn5lgw5ke9idG9w?disable_polymer=true" target="_blank" class="entypo-youtube"><span>Youtube</span></a></li>
     </ul>
     <button class="call-button"><span class="mobile-phone"></span></button>
     <div class="modal-callback" id="modal-call">
@@ -156,14 +152,26 @@
 <section class="video-reviews">”
         <h2 class="bottom-tab">Отзывы</h2>
         <div class="flex-wrapper">
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/Kj4524AAZdE" frameborder="0" allowfullscreen></iframe>
+            <div class="video-review">
+                <button class="play-video"></button>
+                <img src="img/sale-service.jpg" alt="first-review">
+                <div class="video-review-block" id="111">
+                    <div class="video-review-content animate">
+                        <button class="close-video"></button>
+                        <div class="video-wrapper">
+                            <iframe class="video" src="https://www.youtube.com/embed/Kj4524AAZdE?autoplay=1&rel=0" frameborder="0" allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/kIID5FDi2JQ" frameborder="0" allowfullscreen></iframe>
+            <div class="video-review">
+                <img src="img/sale-service.jpg" alt="first-review">
+                <button class="play-video"></button>
             </div>
-            <div class="video-wrapper">
-                <iframe src="https://www.youtube.com/embed/CYB-pmNs4VQ" frameborder="0" allowfullscreen></iframe>
+            <div class="video-review">
+                <img src="img/sale-service.jpg" alt="first-review">
+                <button class="play-video"></button>
             </div>
         </div>
 </section>
@@ -230,6 +238,7 @@
 <script src="js/preload.js"></script>
 <script src="../node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
 <script src="../node_modules/slick-carousel/slick/slick.js"></script>
+<script src="js/handleVideoReview.js"></script>
 <script src="js/sliderSettings.js"></script>
 <script src="js/callback.js"></script>
 <script src="js/slideBarSettings.js"></script>

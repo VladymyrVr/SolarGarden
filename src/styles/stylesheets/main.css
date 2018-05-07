@@ -86,7 +86,7 @@ body hgroup {
 /* line 12, ../scss/general/_general.scss */
 .wrapper {
   max-width: 1170px;
-  padding: 0 10px;
+  padding: 0 20px;
   margin: 0 auto;
   height: inherit;
 }
@@ -102,9 +102,9 @@ body hgroup {
   display: block;
   width: 95px;
   height: 2px;
-  left: 5%;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  top: -15px;
+  transform: translateX(-50%);
   background: #00b000;
 }
 /* line 34, ../scss/general/_general.scss */
@@ -114,46 +114,68 @@ body hgroup {
   display: block;
   width: 95px;
   height: 2px;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
   background: #00b000;
 }
 
-/* line 47, ../scss/general/_general.scss */
+/* line 49, ../scss/general/_general.scss */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* line 64, ../scss/general/_general.scss */
 .navigation-section {
   padding: 20px 0 50px 0;
   background: url("../../img/background-nav.jpg") no-repeat;
   background-size: 100% 100%;
 }
 
-/* line 53, ../scss/general/_general.scss */
+/* line 70, ../scss/general/_general.scss */
 strong {
   font-weight: 700;
 }
 
-/* line 57, ../scss/general/_general.scss */
+/* line 74, ../scss/general/_general.scss */
 em {
   font-style: italic;
 }
 
-/* line 61, ../scss/general/_general.scss */
+/* line 78, ../scss/general/_general.scss */
 table, tr, td {
   border: 1px solid black;
 }
 
-/* line 67, ../scss/general/_general.scss */
+/* line 84, ../scss/general/_general.scss */
 table td {
   padding: 10px;
   text-align: center;
 }
 
-/* line 73, ../scss/general/_general.scss */
+/* line 90, ../scss/general/_general.scss */
 .bold {
   font-weight: 700;
 }
 
-/* line 77, ../scss/general/_general.scss */
+/* line 94, ../scss/general/_general.scss */
 .align-justify {
   text-align: justify;
 }
@@ -172,31 +194,32 @@ header .wrapper {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0 30px;
+  position: relative;
   border-radius: 15px;
 }
-/* line 16, ../scss/layout/_header.scss */
+/* line 17, ../scss/layout/_header.scss */
 header .left-side {
   display: flex;
   align-items: center;
 }
-/* line 22, ../scss/layout/_header.scss */
+/* line 23, ../scss/layout/_header.scss */
 header .nav-list li {
   display: inline-block;
   margin-right: 35px;
   position: relative;
   transition: all .4s;
 }
-/* line 28, ../scss/layout/_header.scss */
+/* line 29, ../scss/layout/_header.scss */
 header .nav-list li::after {
   content: "";
   width: 0;
   transition: width .4s;
 }
-/* line 34, ../scss/layout/_header.scss */
+/* line 35, ../scss/layout/_header.scss */
 header .nav-list li:hover {
   color: #00b000;
 }
-/* line 37, ../scss/layout/_header.scss */
+/* line 38, ../scss/layout/_header.scss */
 header .nav-list li:hover::after {
   content: "";
   position: absolute;
@@ -208,11 +231,11 @@ header .nav-list li:hover::after {
   height: 2px;
   background: #00b000;
 }
-/* line 49, ../scss/layout/_header.scss */
+/* line 50, ../scss/layout/_header.scss */
 header .nav-list li:hover a {
   color: #00b000;
 }
-/* line 55, ../scss/layout/_header.scss */
+/* line 56, ../scss/layout/_header.scss */
 header .nav-list a {
   text-decoration: none;
   color: #fff;
@@ -221,11 +244,11 @@ header .nav-list a {
   font-weight: 700;
   padding: 0 3px;
 }
-/* line 66, ../scss/layout/_header.scss */
+/* line 67, ../scss/layout/_header.scss */
 header .active {
   color: #00b000 !important;
 }
-/* line 69, ../scss/layout/_header.scss */
+/* line 70, ../scss/layout/_header.scss */
 header .active::after {
   content: "";
   position: absolute;
@@ -236,44 +259,37 @@ header .active::after {
   height: 2px;
   background: #00b000;
 }
-/* line 82, ../scss/layout/_header.scss */
+/* line 83, ../scss/layout/_header.scss */
 header .contact-mobile-info {
   margin: 0 30px;
 }
-/* line 85, ../scss/layout/_header.scss */
+/* line 86, ../scss/layout/_header.scss */
 header .contact-mobile-info p {
+  margin-bottom: 5px;
   color: #ffffff;
   font: 300 16px 'RobotoSlab', sans-serif;
   position: relative;
 }
-/* line 91, ../scss/layout/_header.scss */
-header .contact-mobile-info .lifecell::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  left: -20px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  background: url("../../img/lifecell-icon.png");
+/* line 92, ../scss/layout/_header.scss */
+header .contact-mobile-info p .kyivstar {
+  color: #5282FF;
 }
-/* line 105, ../scss/layout/_header.scss */
+/* line 99, ../scss/layout/_header.scss */
 header .language-panel {
   display: flex;
   flex-direction: column;
 }
-/* line 109, ../scss/layout/_header.scss */
+/* line 103, ../scss/layout/_header.scss */
 header .language-panel a {
   text-decoration: none;
   color: #fff;
   margin-bottom: 5px;
 }
-/* line 114, ../scss/layout/_header.scss */
+/* line 108, ../scss/layout/_header.scss */
 header .language-panel a.active-lang {
   color: #00b000;
 }
-/* line 120, ../scss/layout/_header.scss */
+/* line 114, ../scss/layout/_header.scss */
 header .js-toggle-main-menu {
   position: absolute;
   color: #ffffff;
@@ -284,20 +300,20 @@ header .js-toggle-main-menu {
   font-size: 24px;
   display: none;
 }
-/* line 131, ../scss/layout/_header.scss */
+/* line 125, ../scss/layout/_header.scss */
 header .js-toggle-main-menu:hover {
   color: #00b000;
   cursor: pointer;
 }
-/* line 137, ../scss/layout/_header.scss */
+/* line 131, ../scss/layout/_header.scss */
 header .logo {
   transition: transform .5s;
 }
-/* line 139, ../scss/layout/_header.scss */
+/* line 133, ../scss/layout/_header.scss */
 header .logo img {
   width: 280px;
 }
-/* line 143, ../scss/layout/_header.scss */
+/* line 137, ../scss/layout/_header.scss */
 header .logo:hover {
   transform: scale(1.1);
 }
@@ -461,55 +477,61 @@ footer {
 
 /* line 71, ../scss/layout/sections/_welcome-section.scss */
 .responsive-menu {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 100000;
   top: 0;
   left: 0;
   background-color: #000000;
   overflow-x: hidden;
   transition: 0.5s;
 }
-/* line 83, ../scss/layout/sections/_welcome-section.scss */
+/* line 86, ../scss/layout/sections/_welcome-section.scss */
+.responsive-menu .menu {
+  display: flex;
+  flex-direction: column;
+}
+/* line 90, ../scss/layout/sections/_welcome-section.scss */
+.responsive-menu .menu li {
+  padding: 20px 0;
+}
+/* line 93, ../scss/layout/sections/_welcome-section.scss */
 .responsive-menu .menu a:hover {
   transform: scale(1.2);
   transition: .5s;
   margin-left: 15px;
 }
-/* line 90, ../scss/layout/sections/_welcome-section.scss */
+/* line 100, ../scss/layout/sections/_welcome-section.scss */
 .responsive-menu a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
   color: #fff;
   display: block;
 }
-/* line 97, ../scss/layout/sections/_welcome-section.scss */
+/* line 107, ../scss/layout/sections/_welcome-section.scss */
 .responsive-menu a span {
   margin-right: 10px;
 }
-/* line 102, ../scss/layout/sections/_welcome-section.scss */
-.responsive-menu h2 {
-  color: #fff;
-  font: 400 26px 'RobotoSlab', sans-serif;
-  margin: 25px 0 30px 0;
-  padding-left: 30px;
-}
 
-/* line 110, ../scss/layout/sections/_welcome-section.scss */
+/* line 113, ../scss/layout/sections/_welcome-section.scss */
 .closebtn {
   position: absolute;
   top: 20px;
   right: 20px;
   cursor: pointer;
 }
-/* line 116, ../scss/layout/sections/_welcome-section.scss */
+/* line 119, ../scss/layout/sections/_welcome-section.scss */
 .closebtn .fa-times {
   font-size: 24px;
 }
 
-/* line 121, ../scss/layout/sections/_welcome-section.scss */
+/* line 124, ../scss/layout/sections/_welcome-section.scss */
 .responsive-menu a:hover {
   color: #00b000;
 }
@@ -678,6 +700,98 @@ footer {
   padding: 50px 0;
 }
 /* line 7, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review-block {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 100000;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/ opacity */
+  padding-top: 60px;
+}
+/* line 20, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review-block .video-review-content {
+  width: 60%;
+  height: 50%;
+  background-color: #ffffff;
+  margin: 5% auto 5% auto;
+  padding: 50px;
+  border-radius: 5px;
+  position: relative;
+}
+/* line 29, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review-block .video-review-content .close-video {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  display: block;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+  background: url("../../img/close-video.png") no-repeat;
+  border: none;
+  outline: none;
+}
+/* line 41, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review-block .video-review-content .close-video:hover {
+  background: url("../../img/close-video-active.png") no-repeat;
+}
+/* line 48, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review {
+  width: 30%;
+  height: 300px;
+  position: relative;
+  transition: all .5s;
+}
+/* line 54, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+/* line 65, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review:hover::after {
+  content: none;
+}
+/* line 69, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review:hover .play-video {
+  background: url("../../img/play-video-active.png") no-repeat;
+}
+/* line 74, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review img {
+  width: 100%;
+  height: 100%;
+}
+/* line 79, ../scss/layout/sections/_video-reviews.scss */
+.video-reviews .video-review .play-video {
+  outline: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: url("../../img/play-video.png") no-repeat;
+  border: none;
+  cursor: pointer;
+}
+/* line 94, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews h2 {
   text-align: center;
   font: 700 36px 'RobotoSlab', sans-serif;
@@ -685,22 +799,22 @@ footer {
   text-transform: uppercase;
   position: relative;
 }
-/* line 15, ../scss/layout/sections/_video-reviews.scss */
+/* line 102, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .flex-wrapper {
   height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-/* line 22, ../scss/layout/sections/_video-reviews.scss */
+/* line 109, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-wrapper {
   position: relative;
-  width: 470px;
-  height: 320px;
+  width: 100%;
+  height: calc(100% - 40px);
   padding-top: 40px;
   overflow: hidden;
 }
-/* line 29, ../scss/layout/sections/_video-reviews.scss */
+/* line 116, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -903,32 +1017,49 @@ footer {
   background-color: #ffffff;
 }
 
-/* line 1, ../scss/layout/sections/_solar-station.scss */
+@media all and (max-width: 1000px) {
+  /* line 100, ../scss/layout/sections/services-list.scss */
+  .services-list {
+    justify-content: space-around;
+  }
+}
+@media all and (max-width: 760px) {
+  /* line 107, ../scss/layout/sections/services-list.scss */
+  .services-section h2 {
+    font-size: 22px;
+  }
+
+  /* line 111, ../scss/layout/sections/services-list.scss */
+  .services-list {
+    justify-content: center;
+  }
+}
+/* line 1, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper {
   padding: 40px;
 }
-/* line 4, ../scss/layout/sections/_solar-station.scss */
+/* line 4, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .wrapper {
   display: flex;
 }
-/* line 8, ../scss/layout/sections/_solar-station.scss */
+/* line 8, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .left-panel {
   max-width: 300px;
   width: 100%;
   margin-right: 20px;
 }
-/* line 13, ../scss/layout/sections/_solar-station.scss */
+/* line 13, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .left-panel .facebook-banner {
   margin: 25px 0;
   border-radius: 10px;
   transition: .5s;
 }
-/* line 18, ../scss/layout/sections/_solar-station.scss */
+/* line 18, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .left-panel .facebook-banner:hover {
   box-shadow: 0 0 10px #000;
   transform: scale(1.05);
 }
-/* line 24, ../scss/layout/sections/_solar-station.scss */
+/* line 24, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .left-panel .solar-navigation {
   display: flex;
   flex-direction: column;
@@ -936,7 +1067,7 @@ footer {
   padding: 25px 15px;
   border-radius: 10px;
 }
-/* line 31, ../scss/layout/sections/_solar-station.scss */
+/* line 31, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .left-panel .solar-navigation a {
   text-transform: uppercase;
   padding-left: 30px;
@@ -949,7 +1080,7 @@ footer {
   max-width: 250px;
   transition: all .3s;
 }
-/* line 44, ../scss/layout/sections/_solar-station.scss */
+/* line 44, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .left-panel .solar-navigation a::before {
   transition: all .3s;
   position: absolute;
@@ -962,16 +1093,16 @@ footer {
   height: 24px;
   background: url("../../img/sun-icon.png") no-repeat;
 }
-/* line 57, ../scss/layout/sections/_solar-station.scss */
+/* line 57, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .left-panel .solar-navigation a:hover {
   color: #00b000;
 }
-/* line 65, ../scss/layout/sections/_solar-station.scss */
+/* line 65, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content {
   max-width: calc(100% - 265px);
   width: 100%;
 }
-/* line 68, ../scss/layout/sections/_solar-station.scss */
+/* line 68, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content img {
   width: 80%;
   height: auto;
@@ -980,29 +1111,29 @@ footer {
   margin: 15px auto 20px auto;
   transition: all .5s;
 }
-/* line 76, ../scss/layout/sections/_solar-station.scss */
+/* line 76, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content img:hover {
   box-shadow: 0 0 10px #000;
   transform: scale(1.05);
 }
-/* line 82, ../scss/layout/sections/_solar-station.scss */
+/* line 82, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content ol {
   list-style: decimal;
   list-style-position: inside;
   margin-top: 10px;
 }
-/* line 87, ../scss/layout/sections/_solar-station.scss */
+/* line 87, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content ol li {
   text-align: justify;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 15px;
 }
-/* line 95, ../scss/layout/sections/_solar-station.scss */
+/* line 95, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content ul {
   margin-top: 10px;
 }
-/* line 99, ../scss/layout/sections/_solar-station.scss */
+/* line 99, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content ul li {
   background: url("../../img/sun-icon.png") no-repeat 0 50%;
   padding-left: 30px;
@@ -1011,7 +1142,7 @@ footer {
   line-height: 24px;
   margin: 0 0 15px 15px;
 }
-/* line 109, ../scss/layout/sections/_solar-station.scss */
+/* line 109, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content h2 {
   text-align: center;
   font-size: 20px;
@@ -1019,18 +1150,18 @@ footer {
   color: #000;
   margin: 30px 0;
 }
-/* line 116, ../scss/layout/sections/_solar-station.scss */
+/* line 116, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content h2 strong {
   display: inline-block;
 }
-/* line 121, ../scss/layout/sections/_solar-station.scss */
+/* line 121, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content p {
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
   text-indent: 20px;
 }
-/* line 131, ../scss/layout/sections/_solar-station.scss */
+/* line 131, ../scss/layout/sections/_services-content.scss */
 .services-content-wrapper .solar-station-content h1 {
   text-align: center;
   position: relative;
@@ -1039,6 +1170,36 @@ footer {
   margin-bottom: 35px;
 }
 
+@media screen and (max-width: 860px) {
+  /* line 144, ../scss/layout/sections/_services-content.scss */
+  .services-content-wrapper .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 150, ../scss/layout/sections/_services-content.scss */
+  .services-content-wrapper .left-panel .facebook-banner {
+    display: none;
+  }
+  /* line 155, ../scss/layout/sections/_services-content.scss */
+  .services-content-wrapper .left-panel .solar-navigation a {
+    text-align: center;
+  }
+  /* line 162, ../scss/layout/sections/_services-content.scss */
+  .services-content-wrapper .solar-station-content {
+    margin-top: 25px;
+    max-width: 100%;
+  }
+  /* line 166, ../scss/layout/sections/_services-content.scss */
+  .services-content-wrapper .solar-station-content img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 177, ../scss/layout/sections/_services-content.scss */
+  .services-content-wrapper .left-panel .solar-navigation a {
+    font-size: 14px;
+  }
+}
 /* line 1, ../scss/layout/sections/_contact-section.scss */
 .contact-section {
   padding: 50px 0;
@@ -1140,6 +1301,29 @@ footer {
   margin: 0;
 }
 
+@media screen and (max-width: 900px) {
+  /* line 68, ../scss/layout/sections/_gallery-section.scss */
+  .gallery-list li {
+    width: 33.33%;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* line 76, ../scss/layout/sections/_gallery-section.scss */
+  .gallery-section h2 {
+    font-size: 20px;
+  }
+
+  /* line 81, ../scss/layout/sections/_gallery-section.scss */
+  .gallery-list li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 375px) {
+  /* line 89, ../scss/layout/sections/_gallery-section.scss */
+  .gallery-list li {
+    width: 100%;
+  }
+}
 /* line 1, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content {
   padding: 50px 0;
@@ -1147,21 +1331,23 @@ footer {
 /* line 3, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper {
   display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
-/* line 6, ../scss/layout/sections/_gallery-content.scss */
+/* line 8, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .photo-lightgallery {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
 }
-/* line 11, ../scss/layout/sections/_gallery-content.scss */
+/* line 13, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .photo-lightgallery a {
   display: block;
   width: 50%;
   max-height: 250px;
   position: relative;
 }
-/* line 17, ../scss/layout/sections/_gallery-content.scss */
+/* line 19, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .photo-lightgallery a:hover::before {
   width: 100%;
   height: 100%;
@@ -1172,7 +1358,7 @@ footer {
   left: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 28, ../scss/layout/sections/_gallery-content.scss */
+/* line 30, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .photo-lightgallery a:hover::after {
   content: '';
   position: absolute;
@@ -1184,19 +1370,19 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 40, ../scss/layout/sections/_gallery-content.scss */
+/* line 42, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .photo-lightgallery a img {
   display: block;
   margin: 0;
   width: 100%;
   height: 100%;
 }
-/* line 49, ../scss/layout/sections/_gallery-content.scss */
+/* line 51, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .object-describe {
   width: calc(50% - 40px);
   padding: 10px 20px;
 }
-/* line 53, ../scss/layout/sections/_gallery-content.scss */
+/* line 55, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .object-describe h2 {
   text-align: center;
   font: 700 20px 'RobotoSlab', sans-serif;
@@ -1205,17 +1391,17 @@ footer {
   position: relative;
   margin-bottom: 30px;
 }
-/* line 62, ../scss/layout/sections/_gallery-content.scss */
+/* line 64, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .object-describe p {
   text-align: justify;
   text-indent: 10px;
   font: 16px/24px 'RobotoSlab', sans-serif;
 }
-/* line 68, ../scss/layout/sections/_gallery-content.scss */
+/* line 70, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .object-describe ul {
   margin-top: 10px;
 }
-/* line 72, ../scss/layout/sections/_gallery-content.scss */
+/* line 74, ../scss/layout/sections/_gallery-content.scss */
 .gallery-content .wrapper .object-describe ul li {
   background: url("../../img/sun-icon.png") no-repeat 0 50%;
   padding-left: 30px;
@@ -1225,6 +1411,31 @@ footer {
   margin: 0 0 15px 15px;
 }
 
+@media all and (max-width: 768px) {
+  /* line 89, ../scss/layout/sections/_gallery-content.scss */
+  .gallery-content .wrapper {
+    justify-content: center;
+  }
+  /* line 91, ../scss/layout/sections/_gallery-content.scss */
+  .gallery-content .wrapper .photo-lightgallery {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  /* line 96, ../scss/layout/sections/_gallery-content.scss */
+  .gallery-content .wrapper .object-describe {
+    width: calc(90% - 40px);
+  }
+  /* line 99, ../scss/layout/sections/_gallery-content.scss */
+  .gallery-content .wrapper .object-describe h2 {
+    font-size: 18px;
+  }
+}
+@media all and (max-width: 420px) {
+  /* line 111, ../scss/layout/sections/_gallery-content.scss */
+  .gallery-content .wrapper .photo-lightgallery a {
+    width: 100%;
+  }
+}
 /* line 1, ../scss/components/_preload.scss */
 body.preloader-site {
   overflow: hidden;
@@ -1799,27 +2010,7 @@ body.preloader-site {
   color: #00b000;
   font-size: 18px;
 }
-/* line 139, ../scss/components/_modal-call-back.scss */
-.modal-callback .animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s;
-}
-@-webkit-keyframes animatezoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
-@keyframes animatezoom {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
+
 /* line 1, ../scss/components/_scroll-top-button.scss */
 .scroll-to-top {
   width: 72px;
@@ -1908,6 +2099,74 @@ body.preloader-site {
 .contact-img-wrapper img {
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+  /* line 68, ../scss/components/_contact-item.scss */
+  .contact-list li {
+    flex-direction: column;
+  }
+  /* line 71, ../scss/components/_contact-item.scss */
+  .contact-list li .contact-img-wrapper {
+    margin-bottom: 20px;
+  }
+  /* line 75, ../scss/components/_contact-item.scss */
+  .contact-list li .contact-info {
+    text-align: center;
+  }
+}
+/* line 1, ../scss/components/_accordion.scss */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+/* line 14, ../scss/components/_accordion.scss */
+.accordion:hover {
+  color: #00b000;
+}
+/* line 17, ../scss/components/_accordion.scss */
+.accordion:hover:after {
+  color: #00b000;
+}
+
+/* line 23, ../scss/components/_accordion.scss */
+.price-item .active, .price-item .accordion:hover {
+  background-color: #ccc;
+  color: #00b000;
+}
+/* line 28, ../scss/components/_accordion.scss */
+.price-item .accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+/* line 36, ../scss/components/_accordion.scss */
+.price-item .active:after {
+  content: "\2212";
+  color: #00b000;
+}
+/* line 41, ../scss/components/_accordion.scss */
+.price-item .panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s ease-out;
+}
+/* line 48, ../scss/components/_accordion.scss */
+.price-item .panel p {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 1300px) {
@@ -2324,60 +2583,66 @@ body.preloader-site {
     font-size: 14px;
   }
 
-  /* line 439, ../scss/general/_responsive.scss */
-  .welcome-section .wrapper {
+  /* line 437, ../scss/general/_responsive.scss */
+  .navigation-section {
+    padding: 0 0 50px 0;
+  }
+
+  /* line 441, ../scss/general/_responsive.scss */
+  .wrapper {
     padding: 0 20px;
     background: transparent;
   }
-  /* line 444, ../scss/general/_responsive.scss */
-  .welcome-section header {
+
+  /* line 446, ../scss/general/_responsive.scss */
+  header {
     background-color: rgba(0, 0, 0, 0.8);
     margin: 0;
     height: 80px;
   }
-  /* line 450, ../scss/general/_responsive.scss */
-  .welcome-section header .logo img {
+  /* line 452, ../scss/general/_responsive.scss */
+  header .logo img {
     width: 200px;
   }
 }
 @media screen and (max-width: 630px) {
-  /* line 460, ../scss/general/_responsive.scss */
+  /* line 461, ../scss/general/_responsive.scss */
   .service-slider li {
     max-width: 325px;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 470, ../scss/general/_responsive.scss */
+  /* line 471, ../scss/general/_responsive.scss */
   .about-company .company-info {
     margin-bottom: 50px;
   }
-  /* line 474, ../scss/general/_responsive.scss */
+  /* line 475, ../scss/general/_responsive.scss */
   .about-company .advantages-list {
     justify-content: space-around;
   }
-  /* line 476, ../scss/general/_responsive.scss */
+  /* line 477, ../scss/general/_responsive.scss */
   .about-company .advantages-list li {
     width: 100%;
   }
-  /* line 479, ../scss/general/_responsive.scss */
+  /* line 480, ../scss/general/_responsive.scss */
   .about-company .advantages-list li:nth-child(3) {
     margin-bottom: 100px;
   }
-  /* line 483, ../scss/general/_responsive.scss */
+  /* line 484, ../scss/general/_responsive.scss */
   .about-company .advantages-list li p {
     max-width: 250px;
     margin: auto;
     font-size: 16px;
   }
-  /* line 491, ../scss/general/_responsive.scss */
+  /* line 492, ../scss/general/_responsive.scss */
   .about-company .advantages-list-2 {
     justify-content: space-around;
   }
-  /* line 493, ../scss/general/_responsive.scss */
+  /* line 494, ../scss/general/_responsive.scss */
   .about-company .advantages-list-2 li {
     width: 100%;
   }
-  /* line 496, ../scss/general/_responsive.scss */
+  /* line 497, ../scss/general/_responsive.scss */
   .about-company .advantages-list-2 li p {
     max-width: 250px;
     margin: auto;
@@ -2385,35 +2650,35 @@ body.preloader-site {
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 508, ../scss/general/_responsive.scss */
+  /* line 509, ../scss/general/_responsive.scss */
   .modal-callback .modal-content {
     width: 70%;
   }
-  /* line 510, ../scss/general/_responsive.scss */
+  /* line 511, ../scss/general/_responsive.scss */
   .modal-callback .modal-content h2 {
     font-size: 14px;
   }
-  /* line 514, ../scss/general/_responsive.scss */
+  /* line 515, ../scss/general/_responsive.scss */
   .modal-callback .modal-content input {
     font-size: 12px;
   }
-  /* line 519, ../scss/general/_responsive.scss */
+  /* line 520, ../scss/general/_responsive.scss */
   .modal-callback .modal-content form .submit-call {
     font-size: 12px;
   }
 
-  /* line 526, ../scss/general/_responsive.scss */
+  /* line 527, ../scss/general/_responsive.scss */
   .call-button {
     width: 52px;
     height: 52px;
   }
-  /* line 530, ../scss/general/_responsive.scss */
+  /* line 531, ../scss/general/_responsive.scss */
   .call-button .mobile-phone {
     width: 32px;
     height: 32px;
   }
 
-  /* line 536, ../scss/general/_responsive.scss */
+  /* line 537, ../scss/general/_responsive.scss */
   .scroll-to-top {
     width: 52px;
     height: 52px;
@@ -2421,36 +2686,36 @@ body.preloader-site {
     bottom: 100px;
   }
 
-  /* line 543, ../scss/general/_responsive.scss */
+  /* line 544, ../scss/general/_responsive.scss */
   .social-networks-list a {
     width: 40px;
     height: 40px;
   }
-  /* line 547, ../scss/general/_responsive.scss */
+  /* line 548, ../scss/general/_responsive.scss */
   .social-networks-list a::before {
     font-size: 20px;
   }
 
-  /* line 553, ../scss/general/_responsive.scss */
+  /* line 554, ../scss/general/_responsive.scss */
   .logo img {
     width: 200px;
   }
 
-  /* line 558, ../scss/general/_responsive.scss */
+  /* line 559, ../scss/general/_responsive.scss */
   .project-realisation {
     padding: 40px 0;
   }
 
-  /* line 562, ../scss/general/_responsive.scss */
+  /* line 563, ../scss/general/_responsive.scss */
   .about-company {
     padding: 40px 0 20px 0;
   }
 
-  /* line 567, ../scss/general/_responsive.scss */
+  /* line 568, ../scss/general/_responsive.scss */
   .welcome-section .wrapper {
     padding: 0 20px 0 0;
   }
-  /* line 572, ../scss/general/_responsive.scss */
+  /* line 573, ../scss/general/_responsive.scss */
   .welcome-section .js-toggle-main-menu {
     left: 20px;
   }

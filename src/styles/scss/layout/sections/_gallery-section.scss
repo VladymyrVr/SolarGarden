@@ -62,3 +62,32 @@
   }
 
 }
+
+@media screen and (max-width: 900px) {
+  .gallery-list {
+    li {
+      width: 33.33%;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .gallery-section {
+    h2 {
+      font-size: 20px;
+    }
+  }
+  .gallery-list {
+    li {
+      width: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .gallery-list {
+    li {
+      width: 100%;
+    }
+  }
+}
