@@ -5,7 +5,6 @@ $(document).ready(function($) {
     }, 1000);
 });
 $(window).load(function() {
-
     var Body = $('body');
     Body.addClass('preloader-site');
 });

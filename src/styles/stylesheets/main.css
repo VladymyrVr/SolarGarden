@@ -694,33 +694,25 @@ footer {
 
 /* line 1, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews {
-  height: calc(100vh - 100px);
   background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 100%), url("../../img/video-reviews-background.jpg") no-repeat;
-  background-size: cover;
-  padding: 50px 0;
+  background-size: 100% 100%;
+  padding: 60px 0 100px 0;
 }
-/* line 7, ../scss/layout/sections/_video-reviews.scss */
+/* line 6, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review-block {
   display: none;
   position: fixed;
-  /* Stay in place */
   z-index: 100000;
-  /* Sit on top */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: black;
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.8);
-  /* Black w/ opacity */
   padding-top: 60px;
 }
-/* line 20, ../scss/layout/sections/_video-reviews.scss */
+/* line 19, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review-block .video-review-content {
   width: 60%;
   height: 50%;
@@ -730,7 +722,7 @@ footer {
   border-radius: 5px;
   position: relative;
 }
-/* line 29, ../scss/layout/sections/_video-reviews.scss */
+/* line 28, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review-block .video-review-content .close-video {
   width: 24px;
   height: 24px;
@@ -743,18 +735,18 @@ footer {
   border: none;
   outline: none;
 }
-/* line 41, ../scss/layout/sections/_video-reviews.scss */
+/* line 40, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review-block .video-review-content .close-video:hover {
   background: url("../../img/close-video-active.png") no-repeat;
 }
-/* line 48, ../scss/layout/sections/_video-reviews.scss */
+/* line 47, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review {
   width: 30%;
   height: 300px;
   position: relative;
   transition: all .5s;
 }
-/* line 54, ../scss/layout/sections/_video-reviews.scss */
+/* line 53, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review::after {
   content: '';
   display: block;
@@ -765,20 +757,20 @@ footer {
   right: 0;
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 65, ../scss/layout/sections/_video-reviews.scss */
+/* line 64, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review:hover::after {
   content: none;
 }
-/* line 69, ../scss/layout/sections/_video-reviews.scss */
+/* line 68, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review:hover .play-video {
   background: url("../../img/play-video-active.png") no-repeat;
 }
-/* line 74, ../scss/layout/sections/_video-reviews.scss */
+/* line 73, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review img {
   width: 100%;
   height: 100%;
 }
-/* line 79, ../scss/layout/sections/_video-reviews.scss */
+/* line 78, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-review .play-video {
   outline: none;
   position: absolute;
@@ -791,22 +783,24 @@ footer {
   border: none;
   cursor: pointer;
 }
-/* line 94, ../scss/layout/sections/_video-reviews.scss */
+/* line 93, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews h2 {
   text-align: center;
   font: 700 36px 'RobotoSlab', sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   position: relative;
+  margin-bottom: 50px;
 }
 /* line 102, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .flex-wrapper {
   height: inherit;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
-/* line 109, ../scss/layout/sections/_video-reviews.scss */
+/* line 110, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-wrapper {
   position: relative;
   width: 100%;
@@ -814,7 +808,7 @@ footer {
   padding-top: 40px;
   overflow: hidden;
 }
-/* line 116, ../scss/layout/sections/_video-reviews.scss */
+/* line 117, ../scss/layout/sections/_video-reviews.scss */
 .video-reviews .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -823,6 +817,62 @@ footer {
   height: 100%;
 }
 
+@media screen and (max-width: 1024px) {
+  /* line 129, ../scss/layout/sections/_video-reviews.scss */
+  .video-reviews .video-review {
+    width: 55%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  /* line 134, ../scss/layout/sections/_video-reviews.scss */
+  .video-reviews .video-review .video-review-content {
+    height: 40%;
+  }
+  /* line 139, ../scss/layout/sections/_video-reviews.scss */
+  .video-reviews .flex-wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* line 148, ../scss/layout/sections/_video-reviews.scss */
+  .video-reviews .video-review {
+    width: 65%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  /* line 153, ../scss/layout/sections/_video-reviews.scss */
+  .video-reviews .video-review .video-review-content {
+    width: 75%;
+    height: 35%;
+    padding: 25px;
+  }
+  /* line 158, ../scss/layout/sections/_video-reviews.scss */
+  .video-reviews .video-review .video-review-content .close-video {
+    right: 4px;
+    top: 7px;
+  }
+}
+@media screen and (max-width: 430px) {
+  /* line 170, ../scss/layout/sections/_video-reviews.scss */
+  .video-reviews .video-review {
+    width: 65%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+  /* line 175, ../scss/layout/sections/_video-reviews.scss */
+  .video-reviews .video-review .video-review-content {
+    width: 75%;
+    height: 30%;
+    padding: 35px;
+    margin: 25% auto;
+  }
+  /* line 181, ../scss/layout/sections/_video-reviews.scss */
+  .video-reviews .video-review .video-review-content .close-video {
+    right: 7px;
+    top: 7px;
+  }
+}
 /* line 1, ../scss/layout/sections/_project-realisation.scss */
 .project-realisation {
   padding: 90px 0;
@@ -2651,34 +2701,54 @@ body.preloader-site {
 }
 @media screen and (max-width: 450px) {
   /* line 509, ../scss/general/_responsive.scss */
+  .about-company h2 {
+    font-size: 22px;
+  }
+
+  /* line 515, ../scss/general/_responsive.scss */
+  .video-reviews h2 {
+    font-size: 22px;
+  }
+
+  /* line 521, ../scss/general/_responsive.scss */
+  .project-realisation h2 {
+    font-size: 22px;
+  }
+
+  /* line 527, ../scss/general/_responsive.scss */
+  .service-slider li {
+    max-width: 290px;
+  }
+
+  /* line 533, ../scss/general/_responsive.scss */
   .modal-callback .modal-content {
     width: 70%;
   }
-  /* line 511, ../scss/general/_responsive.scss */
+  /* line 535, ../scss/general/_responsive.scss */
   .modal-callback .modal-content h2 {
     font-size: 14px;
   }
-  /* line 515, ../scss/general/_responsive.scss */
+  /* line 539, ../scss/general/_responsive.scss */
   .modal-callback .modal-content input {
     font-size: 12px;
   }
-  /* line 520, ../scss/general/_responsive.scss */
+  /* line 544, ../scss/general/_responsive.scss */
   .modal-callback .modal-content form .submit-call {
     font-size: 12px;
   }
 
-  /* line 527, ../scss/general/_responsive.scss */
+  /* line 551, ../scss/general/_responsive.scss */
   .call-button {
     width: 52px;
     height: 52px;
   }
-  /* line 531, ../scss/general/_responsive.scss */
+  /* line 555, ../scss/general/_responsive.scss */
   .call-button .mobile-phone {
     width: 32px;
     height: 32px;
   }
 
-  /* line 537, ../scss/general/_responsive.scss */
+  /* line 561, ../scss/general/_responsive.scss */
   .scroll-to-top {
     width: 52px;
     height: 52px;
@@ -2686,36 +2756,36 @@ body.preloader-site {
     bottom: 100px;
   }
 
-  /* line 544, ../scss/general/_responsive.scss */
+  /* line 568, ../scss/general/_responsive.scss */
   .social-networks-list a {
     width: 40px;
     height: 40px;
   }
-  /* line 548, ../scss/general/_responsive.scss */
+  /* line 572, ../scss/general/_responsive.scss */
   .social-networks-list a::before {
     font-size: 20px;
   }
 
-  /* line 554, ../scss/general/_responsive.scss */
+  /* line 578, ../scss/general/_responsive.scss */
   .logo img {
     width: 200px;
   }
 
-  /* line 559, ../scss/general/_responsive.scss */
+  /* line 583, ../scss/general/_responsive.scss */
   .project-realisation {
     padding: 40px 0;
   }
 
-  /* line 563, ../scss/general/_responsive.scss */
+  /* line 587, ../scss/general/_responsive.scss */
   .about-company {
     padding: 40px 0 20px 0;
   }
 
-  /* line 568, ../scss/general/_responsive.scss */
+  /* line 592, ../scss/general/_responsive.scss */
   .welcome-section .wrapper {
     padding: 0 20px 0 0;
   }
-  /* line 573, ../scss/general/_responsive.scss */
+  /* line 597, ../scss/general/_responsive.scss */
   .welcome-section .js-toggle-main-menu {
     left: 20px;
   }
