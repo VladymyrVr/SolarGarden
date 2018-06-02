@@ -15,5 +15,22 @@ $(document).ready(function () {
         if (event.target == modal) {
             modal.css('display', 'none');
         }
-    }
+    };
+
+        $("#callback").submit(function() {
+            var th = $(this);
+            $.ajax({
+                type: "POST",
+                url: "../backend/mail.php",
+                data: th.serialize()
+            }).done(function() {
+                alert("Мы передзвоним вам в ближайшее время!");
+                setTimeout(function() {
+                    // Done Functions
+                    th.trigger("reset");
+                }, 1000);
+            });
+            return false;
+        });
+
 });

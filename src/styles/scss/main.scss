@@ -1,5 +1,3 @@
-@import "compass/css3";
-@import "compass/reset";
 
 @import "../../../node_modules/font-awesome/css/font-awesome.css";
 @import "../../../node_modules/slick-carousel/slick/slick.css";
@@ -18,6 +16,7 @@
 @import "layout/sections/contact-section";
 @import "layout/sections/gallery-section";
 @import "layout/sections/gallery-content";
+@import "layout/sections/news-section";
 
 
 @import "components/preload";

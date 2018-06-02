@@ -2,10 +2,13 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SolarGarden - услуги</title>
+    <meta name="description"
+          content="SolarGarden, Альтернативная Энергетика , Зеленый Тариф , Подключение Зеленого Тарифа, Зеленый Тариф Украина">
+    <meta name="keywords"
+          content="SolarGarden, Альтернативная Энергетика , Зеленый Тариф , Подключение Зеленого Тарифа, Зеленый Тариф Украина">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0">
+    <title>Зеленый тариф | Solar Garden</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/stylesheets/main.css">
 </head>
 <body>
@@ -14,8 +17,8 @@
         <a class="closebtn" id="hide-btn"><span class="fa fa-times"></span></a>
         <ul class="menu small">
             <li><a href="../index.html"><span class="fa fa-home"></span> Главная</a></li>
-            <li><a href="services.html"><span class="fa fa-briefcase"></span> Услуги</a></li>
-            <li><a href="#"><span class="fa fa-newspaper-o"></span> Новости</a></li>
+            <li class="active"><a href="services.html"><span class="fa fa-briefcase"></span> Услуги</a></li>
+            <li><a href="news.html"><span class="fa fa-newspaper-o"></span> Новости</a></li>
             <li><a href="gallery.html"><span class="fa fa-camera-retro"></span> Галерея</a></li>
             <li><a href="contact.html"><span class="fa fa-user-plus"></span> Контакты</a></li>
         </ul>
@@ -33,13 +36,14 @@
                     <ul class="nav-list">
                         <li><a href="../index.html">Главная</a></li>
                         <li><a class="active" href="services.html">Услуги</a></li>
-                        <li><a href="">Новости</a></li>
+                        <li><a href="news.html">Новости</a></li>
                         <li><a href="gallery.html">Галерея</a></li>
                         <li><a href="contact.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="contact-mobile-info">
-                    <p class="lifecell">+380977355228</p>
+                    <p>+38 (<span class="kyivstar">067</span>) -367-91-99</p>
+                    <p >+38 (<span class="kyivstar">067</span>) -182-71-77</p>
                 </div>
             </div>
             <div class="js-toggle-main-menu">
@@ -57,16 +61,20 @@
     <button class="call-button"><span class="mobile-phone"></span></button>
     <div class="modal-callback" id="modal-call">
         <div class="modal-content animate">
-            <h2>Введите ваши контактные данные мы с вами свяжемся в ближайшое времья</h2>
+            <h2>Оставьте Ваши контактные данные, и мы свяжемся с Вами в ближайшее время</h2>
             <button class="close-button"></button>
-            <form>
+            <form id="callback">
+                <input type="hidden" name="project_name" value="Solar Garden">
+                <input type="hidden" name="admin_email" value="solargarden.ua@gmail.com">
+                <input type="hidden" name="form_subject" value="Обратная связь Solar Garden">
                 <div class="input-wrapper user-name-field">
-                    <input type="text" autocomplete="off" placeholder="Введите ваше имья">
+                    <input type="text" name="Name" autocomplete="off" placeholder="Введите ваше имя" required>
                 </div>
                 <div class="input-wrapper phone-field">
-                    <input id="phone-field" placeholder="Введите номер телефона" type="text" autocomplete="off">
+                    <input id="phone-field" name="Phone" placeholder="Введите номер телефона"  type="text"
+                           autocomplete="off" required>
                 </div>
-                <button class="submit-call">Отправить заявку</button>
+                <button class="submit-call">Отправить</button>
             </form>
         </div>
     </div>
@@ -106,92 +114,6 @@
                     солнечного излучения для частных домохозяйств.
                 </li>
             </ul>
-            <table cellspacing="0" cellpadding="7">
-                <tbody>
-                <tr>
-                    <td rowspan="2">Категории объектов электроэнергетики, для которых применяется «зеленый» тариф
-                    </td>
-                    <td colspan="3">Коэффициент «зеленого» тарифа для объектов или его очередей / пусковых комплексов,
-                        введенных в эксплуатацию
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        с 01.01.2017
-                        по 31.12.2019
-                    </td>
-                    <td>
-                        с 01.01.2020
-                        по 31.12.2024
-                    </td>
-                    <td>
-                        с 01.01.2025
-                        по 31.12.2029
-                    </td>
-                </tr>
-                <tr>
-                    <td class="align-justify">
-                        для электроэнергии, произведенной из энергии солнечного излучения наземными объектами
-                        электроэнергетики, величина установленной мощности которых меньше или равна 10 МВт
-                    </td>
-                    <td>
-                        2,79
-                    </td>
-                    <td>
-                        2,51
-                    </td>
-                    <td>
-                        2,23
-                    </td>
-                </tr>
-                <tr>
-                    <td class="align-justify">
-                        для электроэнергии, произведенной из энергии солнечного излучения наземными объектами
-                        электроэнергетики, величина установленной мощности которых меньше или равна 10 МВт
-                    </td>
-                    <td>
-                        2,79
-                    </td>
-                    <td>
-                        2,51
-                    </td>
-                    <td>
-                        2,23
-                    </td>
-                </tr>
-                <tr>
-                    <td class="align-justify">
-                        для электроэнергии, произведенной из энергии солнечного излучения объектами электроэнергетики,
-                        которые вмонтированы (установлены) на крышах и / или фасадах зданий, строений и сооружений
-                    </td>
-                    <td>
-                        3,04
-                    </td>
-                    <td>
-                        2,74
-                    </td>
-                    <td>
-                        2,43
-                    </td>
-                </tr>
-                <tr>
-                    <td class="align-justify">
-                        для электроэнергии, произведенной из энергии солнечного излучения объектами электроэнергетики,
-                        которые вмонтированы (установлены) на крышах и / или фасадах частных домохозяйств (зданий,
-                        строений и сооружений), величина установленной мощности которых не превышает 30 кВт
-                    </td>
-                    <td>
-                        3,36
-                    </td>
-                    <td>
-                        3,02
-                    </td>
-                    <td>
-                        2,69
-                    </td>
-                </tr>
-                </tbody>
-            </table>
             <p>На сегодняшний день «зеленый тариф» для домохозяйств составляет:</p>
             <ul>
                 <li>с 1 января 2017 - 18 евроцентов / кВт * ч;</li>
@@ -245,15 +167,15 @@
                 <ul class="footer-nav-list">
                     <li><a href="../index.html">Главная</a></li>
                     <li><a href="services.html">Услуги</a></li>
-                    <li><a href="">Новости</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                 </ul>
             </nav>
             <div class="footer-contact-info">
                 <p class="address-info">г. Черкассы ул Припортовая 39/1</p>
                 <p class="email-info">solargarden.ua@gmail.com</p>
-                <p class="phone-info">0977355228</p>
+                <p class="phone-info">(067)-123-81-88</p>
             </div>
         </div>
         <div class="footer-copyright">

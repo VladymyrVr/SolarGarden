@@ -1,11 +1,14 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SolarGarden - услуги</title>
+    <meta name="description"
+          content="SolarGarden, Альтернативная Энергетика , Солнячные электростанции , Солнячные электростанции недорого, Солнячные батареи">
+    <meta name="keywords"
+          content="SolarGarden, Альтернативная Энергетика , Солнячные электростанции , Солнячные электростанции недорого, Солнячные батареи">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0">
+    <title>Солнячные электростанции | Solar Garden</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/stylesheets/main.css">
 </head>
 <body>
@@ -14,8 +17,8 @@
         <a class="closebtn" id="hide-btn"><span class="fa fa-times"></span></a>
         <ul class="menu small">
             <li><a href="../index.html"><span class="fa fa-home"></span> Главная</a></li>
-            <li><a href="services.html"><span class="fa fa-briefcase"></span> Услуги</a></li>
-            <li><a href="#"><span class="fa fa-newspaper-o"></span> Новости</a></li>
+            <li class="active"><a href="services.html"><span class="fa fa-briefcase"></span> Услуги</a></li>
+            <li><a href="news.html"><span class="fa fa-newspaper-o"></span> Новости</a></li>
             <li><a href="gallery.html"><span class="fa fa-camera-retro"></span> Галерея</a></li>
             <li><a href="contact.html"><span class="fa fa-user-plus"></span> Контакты</a></li>
         </ul>
@@ -32,13 +35,14 @@
                     <ul class="nav-list">
                         <li><a href="../index.html">Главная</a></li>
                         <li><a class="active" href="services.html">Услуги</a></li>
-                        <li><a href="">Новости</a></li>
+                        <li><a href="news.html">Новости</a></li>
                         <li><a href="gallery.html">Галерея</a></li>
                         <li><a href="contact.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="contact-mobile-info">
-                    <p class="lifecell">+380977355228</p>
+                    <p>+38 (<span class="kyivstar">067</span>) -367-91-99</p>
+                    <p >+38 (<span class="kyivstar">067</span>) -182-71-77</p>
                 </div>
             </div>
             <div class="js-toggle-main-menu">
@@ -56,16 +60,20 @@
     <button class="call-button"><span class="mobile-phone"></span></button>
     <div class="modal-callback" id="modal-call">
         <div class="modal-content animate">
-            <h2>Введите ваши контактные данные мы с вами свяжемся в ближайшое время</h2>
+            <h2>Оставьте Ваши контактные данные, и мы свяжемся с Вами в ближайшее время</h2>
             <button class="close-button"></button>
-            <form>
+            <form id="callback">
+                <input type="hidden" name="project_name" value="Solar Garden">
+                <input type="hidden" name="admin_email" value="solargarden.ua@gmail.com">
+                <input type="hidden" name="form_subject" value="Обратная связь Solar Garden">
                 <div class="input-wrapper user-name-field">
-                    <input type="text" autocomplete="off" placeholder="Введите ваше имя">
+                    <input type="text" name="Name" autocomplete="off" placeholder="Введите ваше имя" required>
                 </div>
                 <div class="input-wrapper phone-field">
-                    <input id="phone-field" placeholder="Введите номер телефона" type="text" autocomplete="off">
+                    <input id="phone-field" name="Phone" placeholder="Введите номер телефона"  type="text"
+                           autocomplete="off" required>
                 </div>
-                <button class="submit-call">Отправить заявку</button>
+                <button class="submit-call">Отправить</button>
             </form>
         </div>
     </div>
@@ -162,7 +170,7 @@
                 <div class="price-item">
                     <button class="accordion">Станция на 5 кВт</button>
                     <div class="panel">
-                        <h2>СЭС мощностью 5 кВт под Зелёный Тариф стоимость от 5726$</h2>
+                        <h2>СЭС мощностью 5 кВт под Зелёный Тариф стоимость от 3 858$</h2>
                         <p>Характеристика оборудования:</p>
                         <ul>
                             <li>Тип панелей – поликристалл</li>
@@ -191,7 +199,7 @@
                 <div class="price-item">
                     <button class="accordion">Станция на 10 кВт</button>
                         <div class="panel">
-                            <h2>СЭС мощностью 10 кВт под Зелёный Тариф стоимость от 10 615,90$</h2>
+                            <h2>СЭС мощностью 10 кВт под Зелёный Тариф стоимость от 7 284,60$</h2>
                             <p>Характеристика оборудования:</p>
                             <ul>
                                 <li>Тип панелей – поликристалл</li>
@@ -220,7 +228,7 @@
                 <div class="price-item">
                     <button class="accordion">Станция на 15 кВт</button>
                     <div class="panel">
-                        <h2>СЭС мощностью 15 кВт под Зелёный Тариф стоимость от 14 312,80$</h2>
+                        <h2>СЭС мощностью 15 кВт под Зелёный Тариф стоимость от 9 963,20$</h2>
                         <p>Характеристика оборудования:</p>
                         <ul>
                             <li>Тип панелей – поликристалл</li>
@@ -249,7 +257,7 @@
                 <div class="price-item">
                     <button class="accordion">Станция на 20 кВт</button>
                     <div class="panel">
-                        <h2>СЭС мощностью 20 кВт под Зелёный Тариф стоимость от 18 233,70$</h2>
+                        <h2>СЭС мощностью 20 кВт под Зелёный Тариф стоимость от 12 630,80$</h2>
                         <p>Характеристика оборудования:</p>
                         <ul>
                             <li>Тип панелей – поликристалл</li>
@@ -278,7 +286,7 @@
                 <div class="price-item">
                     <button class="accordion">Станция на 30 кВт</button>
                     <div class="panel">
-                        <h2>СЭС мощностью 30 кВт под Зелёный Тариф стоимость от 26 957,60$</h2>
+                        <h2>СЭС мощностью 30 кВт под Зелёный Тариф стоимость от 18 776,40$</h2>
                         <p>Характеристика оборудования:</p>
                         <ul>
                             <li>Тип панелей – поликристалл</li>
@@ -306,28 +314,27 @@
                 </div>
             </div>
         </div>
-
     </div>
 </section>
 <footer>
     <div class="wrapper">
         <div class="footer-main">
             <div class="logo">
-                <a href="index.html"><img src="../img/solar-logo.png" alt="SolarGarden"></a>
+                <a href="../index.html"><img src="../img/solar-logo.png" alt="SolarGarden"></a>
             </div>
             <nav class="footer-nav">
                 <ul class="footer-nav-list">
                     <li><a href="../index.html">Главная</a></li>
                     <li><a href="services.html">Услуги</a></li>
-                    <li><a href="">Новости</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                 </ul>
             </nav>
             <div class="footer-contact-info">
                 <p class="address-info">г. Черкассы ул Припортовая 39/1</p>
                 <p class="email-info">solargarden.ua@gmail.com</p>
-                <p class="phone-info">0977355228</p>
+                <p class="phone-info">(067)-123-81-88</p>
             </div>
         </div>
         <div class="footer-copyright">

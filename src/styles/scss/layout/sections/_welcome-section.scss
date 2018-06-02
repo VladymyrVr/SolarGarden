@@ -79,28 +79,66 @@
   z-index: 100000;
   top: 0;
   left: 0;
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, .7);
   overflow-x: hidden;
   transition: 0.5s;
 
   .menu {
     display: flex;
     flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 80px;
 
     li {
-      padding: 20px 0;
+      height: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        background: rgba(0, 0, 0, .5);
+        a {
+          color: #00b000;
+
+          span {
+            border: 1px solid #00b000;
+            color: #00b000;
+          }
+        }
+      }
+
+      &:hover {
+        background: rgb(0, 0, 0);
+      }
     }
-    a:hover {
-      transform: scale(1.2);
-      transition: .5s;
-      margin-left: 15px;
+    a {
+
+      span {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        background: transparent;
+        margin-bottom: 15px;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        border: 1px solid white;
+
+        &::before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
     }
   }
 
   a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     display: block;
 
@@ -112,8 +150,9 @@
 
 .closebtn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
 
   .fa-times {
@@ -122,6 +161,10 @@
 }
 
 .responsive-menu a:hover {
+  color: #00b000;
+}
+
+.important-for-user {
   color: #00b000;
 }
 

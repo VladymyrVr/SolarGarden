@@ -1,10 +1,13 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0,  minimum-scale=1.0">
-    <title>SolarGarden</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0">
+    <meta name="description" content="Солнячные Электростанции под Зеленый Тариф
+&#9728;, SolarGarden, Альтернативная Энергетика , Стоимость Солнячной Электростанции">
+    <meta name="keywords" content="купить Солнечные панели, Что такое Зеленый тариф, Выгода Альтернативной энергетики, Solar Garden">
+    <title>Solar Garden - Альтернативная энергетика, Солнячные Электростанции под Зеленый Тариф</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/stylesheets/main.css">
     <link rel="stylesheet" href="styles/stylesheets/animate.css">
 </head>
@@ -25,9 +28,9 @@
     <div class="responsive-menu" id="responsive-menu">
         <a class="closebtn" id="hide-btn"><span class="fa fa-times"></span></a>
         <ul class="menu small">
-            <li><a href="index.html"><span class="fa fa-home"></span> Главная</a></li>
+            <li class="active"><a href="index.html"><span class="fa fa-home"></span> Главная</a></li>
             <li><a href="html/services.html"><span class="fa fa-briefcase"></span> Услуги</a></li>
-            <li><a href="#"><span class="fa fa-newspaper-o"></span> Новости</a></li>
+            <li><a href="html/news.html"><span class="fa fa-newspaper-o"></span> Новости</a></li>
             <li><a href="html/gallery.html"><span class="fa fa-camera-retro"></span> Галерея</a></li>
             <li><a href="html/contact.html"><span class="fa fa-user-plus"></span> Контакты</a></li>
         </ul>
@@ -44,7 +47,7 @@
                     <ul class="nav-list">
                         <li><a href="" class="active">Главная</a></li>
                         <li><a href="html/services.html">Услуги</a></li>
-                        <li><a href="">Новости</a></li>
+                        <li><a href="html/news.html">Новости</a></li>
                         <li><a href="html/gallery.html">Галерея</a></li>
                         <li><a href="html/contact.html">Контакты</a></li>
                     </ul>
@@ -61,20 +64,21 @@
     </header>
     <div class="welcome-message">
         <div class="first-message">
-            <h2 >SolarGarden - альтернативная энергетика</h2>
-            <p class="bottom-tab">Альтернативная энергетика</p>
+            <h2 >SolarGarden</h2>
+            <p class="bottom-tab">Ваш <span class="important-for-user">надёжный партнер</span> в солнечное
+                энергетике</p>
         </div>
         <div class="second-message">
-            <h2 >SolarGarden - Лучшие</h2>
-            <p class="bottom-tab">Экосистема надо сейвить</p>
+            <h2 >Солнечные электростанции</h2>
+            <p class="bottom-tab">Продажа, Монтаж, Обслуживание</p>
         </div>
         <div class="third-message">
-            <h2 >SolarGarden - Топ</h2>
-            <p class="bottom-tab">Зеленый тариф</p>
+            <h2>Тепловые насосы:</h2>
+            <p class="bottom-tab"><span class="important-for-user">экономия <strong>75 %</strong></span> энергоресурсов</p>
         </div>
         <div class="fourth-message">
-            <h2 >SolarGarden - Купи</h2>
-            <p class="bottom-tab">Конец</p>
+            <h2 >Уличное освещение</h2>
+            <p class="bottom-tab">никаких кабелей и проектов</p>
         </div>
     </div>
     <ul class="social-networks-list">
@@ -86,16 +90,20 @@
     <button class="call-button"><span class="mobile-phone"></span></button>
     <div class="modal-callback" id="modal-call">
         <div class="modal-content animate">
-            <h2>Введите ваши контактные данные мы  с вами свяжемся в ближайшое времья</h2>
+            <h2>Оставьте Ваши контактные данные, и мы свяжемся с Вами в ближайшее время</h2>
             <button class="close-button"></button>
-            <form>
+            <form id="callback">
+                <input type="hidden" name="project_name" value="Solar Garden">
+                <input type="hidden" name="admin_email" value="solargarden.ua@gmail.com">
+                <input type="hidden" name="form_subject" value="Обратная связь Solar Garden">
                 <div class="input-wrapper user-name-field">
-                    <input type="text" autocomplete="off" placeholder="Введите ваше имья">
+                    <input type="text" name="Name" autocomplete="off" placeholder="Введите ваше имя" required>
                 </div>
                 <div class="input-wrapper phone-field">
-                    <input id="phone-field" placeholder="Введите номер телефона"  type="text" autocomplete="off">
+                    <input id="phone-field" name="Phone" placeholder="Введите номер телефона"  type="text"
+                           autocomplete="off" required>
                 </div>
-                <button class="submit-call">Отправить заявку</button>
+                <button class="submit-call">Отправить</button>
             </form>
         </div>
     </div>
@@ -105,17 +113,17 @@
     <div class="wrapper">
         <ul class="service-slider">
             <li><a class="sun-electrostation" href="html/solar-electrostation.html">Солнечные электростанции</a></li>
-            <li><a class="gelio-system" href="">Гелиосистемы</a></li>
-            <li><a class="hot-system" href="">Тепловые насосы</a></li>
-            <li><a class="counter" href="">Счетчики и крепления</a></li>
-            <li><a class="lighting" href="">Aвтономное освещение</a></li>
-            <li><a class="irrigation" href="">Автономное орошение</a></li>
-            <li><a class="green-traffic" href="">Подключение Зелёного Тарифа</a></li>
-            <li><a class="proecting" href="">Проектирование</a></li>
-            <li><a class="lawyer" href="">Юридическое сопровождение</a></li>
-            <li><a class="consulting" href="">Консалтинг</a></li>
-            <li><a class="garrantly" href="">Гарантийное обслуживание</a></li>
-            <li><a class="installation" href="">Монтаж и пуско-наладка</a></li>
+            <li><a class="gelio-system" href="html/gelio-systems.html">Гелиосистемы</a></li>
+            <li><a class="hot-system" href="html/heat-pumps.html">Тепловые насосы</a></li>
+            <li><a class="counter" href="html/counter-and-fasteners.html">Счетчики и крепления</a></li>
+            <li><a class="lighting" href="html/autonomic-lighting.html">Aвтономное освещение</a></li>
+            <li><a class="irrigation" href="html/auto-irrigation.html">Автономное орошение</a></li>
+            <li><a class="green-traffic" href="html/green-traffic.html">Подключение Зелёного Тарифа</a></li>
+            <li><a class="proecting" href="html/proecting.html">Проектирование</a></li>
+            <li><a class="lawyer" href="html/legal-support.html">Юридическое сопровождение</a></li>
+            <li><a class="consulting" href="html/consulting.html">Консалтинг</a></li>
+            <li><a class="garrantly" href="html/warranty-service.html">Гарантийное обслуживание</a></li>
+            <li><a class="installation" href="html/installation-commissioning.html">Монтаж и пуско-наладка</a></li>
         </ul>
         <div id="header-company">
             <h2 class="bottom-tab">О компании</h2>
@@ -156,10 +164,10 @@
                 <button class="play-video"></button>
                 <img src="img/sale-service.jpg" alt="first-review">
                 <div class="video-review-block">
-                    <div class="video-review-content animate" id="sss">
+                    <div class="video-review-content animate">
                         <button class="close-video"></button>
                         <div class="video-wrapper">
-                            <iframe class="video" src="https://www.youtube.com/embed/zJZBqERdi60" frameborder="0" allowfullscreen
+                            <iframe class="video" src="https://www.youtube.com/embed/zJZBqERdi60" allowfullscreen
                             ></iframe>
                         </div>
                     </div>
@@ -172,7 +180,7 @@
                     <div class="video-review-content animate">
                         <button class="close-video"></button>
                         <div class="video-wrapper">
-                            <iframe class="video" src="https://www.youtube.com/embed/EJrLYREkN94" frameborder="0" allowfullscreen
+                            <iframe class="video" src="https://www.youtube.com/embed/EJrLYREkN94" allowfullscreen
                             ></iframe>
                         </div>
                     </div>
@@ -185,7 +193,7 @@
                     <div class="video-review-content animate">
                         <button class="close-video"></button>
                         <div class="video-wrapper">
-                            <iframe class="video" src="https://www.youtube.com/embed/RU1O7sJz-S0" frameborder="0" allowfullscreen
+                            <iframe class="video" src="https://www.youtube.com/embed/RU1O7sJz-S0"  allowfullscreen
                             ></iframe>
                         </div>
                     </div>
@@ -233,11 +241,11 @@
             </div>
             <nav class="footer-nav">
                 <ul class="footer-nav-list">
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Услуги</a></li>
-                    <li><a href="">Новости</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="html/services.html">Услуги</a></li>
+                    <li><a href="html/news.html">Новости</a></li>
+                    <li><a href="html/gallery.html">Галерея</a></li>
+                    <li><a href="html/contact.html">Контакты</a></li>
                 </ul>
             </nav>
             <div class="footer-contact-info">

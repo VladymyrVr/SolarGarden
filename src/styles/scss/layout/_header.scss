@@ -90,25 +90,22 @@ header {
       position: relative;
 
       .kyivstar {
-        color: #5282FF;
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 24px;
+          height: 24px;
+          background: url("../../img/kyivstar.png") no-repeat;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 60px;
+        }
       }
     }
 
-  }
-
-  .language-panel {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      text-decoration: none;
-      color: #fff;
-      margin-bottom: 5px;
-
-      &.active-lang {
-        color: #00b000;
-      }
-    }
   }
 
   .js-toggle-main-menu {

@@ -1,23 +1,31 @@
 <!doctype html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0">
+    <meta name="description" content="Solar Garden адрес компании, Офис Solar Garden, Контакты Solar Garden">
+    <meta name="keywords"
+          content="ул Припортовоя 39/1 Черкассы, Контакты Solar Garden, Solar Garden Черкассы, Solar Garden Украина">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SolarGarden - услуги</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>SolarGarden | Контакты</title>
     <link rel="stylesheet" href="../styles/stylesheets/main.css">
 </head>
 <body>
+<div class="preloader-wrapper">
+    <div class="preloader">
+        <img src="../img/preload.gif" alt="preload">
+    </div>
+</div>
 <section class="navigation-section">
     <div class="responsive-menu" id="responsive-menu">
         <a class="closebtn" id="hide-btn"><span class="fa fa-times"></span></a>
         <ul class="menu small">
             <li><a href="../index.html"><span class="fa fa-home"></span> Главная</a></li>
             <li><a href="services.html"><span class="fa fa-briefcase"></span> Услуги</a></li>
-            <li><a href="#"><span class="fa fa-newspaper-o"></span> Новости</a></li>
+            <li><a href="news.html"><span class="fa fa-newspaper-o"></span> Новости</a></li>
             <li><a href="gallery.html"><span class="fa fa-camera-retro"></span> Галерея</a></li>
-            <li><a href="contact.html"><span class="fa fa-user-plus"></span> Контакты</a></li>
+            <li class="active"><a href="contact.html"><span class="fa fa-user-plus"></span> Контакты</a></li>
         </ul>
     </div>
     <header>
@@ -32,13 +40,14 @@
                     <ul class="nav-list">
                         <li><a href="../index.html">Главная</a></li>
                         <li><a  href="services.html">Услуги</a></li>
-                        <li><a href="">Новости</a></li>
+                        <li><a href="news.html">Новости</a></li>
                         <li><a href="gallery.html">Галерея</a></li>
                         <li><a class="active" href="contact.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="contact-mobile-info">
-                    <p class="lifecell">+380977355228</p>
+                    <p>+38 (<span class="kyivstar">067</span>) -367-91-99</p>
+                    <p >+38 (<span class="kyivstar">067</span>) -182-71-77</p>
                 </div>
             </div>
             <div class="js-toggle-main-menu">
@@ -55,16 +64,20 @@
     <button class="call-button"><span class="mobile-phone"></span></button>
     <div class="modal-callback" id="modal-call">
         <div class="modal-content animate">
-            <h2>Введите ваши контактные данные мы  с вами свяжемся в ближайшое времья</h2>
+            <h2>Оставьте Ваши контактные данные, и мы свяжемся с Вами в ближайшее время</h2>
             <button class="close-button"></button>
-            <form>
+            <form id="callback">
+                <input type="hidden" name="project_name" value="Solar Garden">
+                <input type="hidden" name="admin_email" value="solargarden.ua@gmail.com">
+                <input type="hidden" name="form_subject" value="Обратная связь Solar Garden">
                 <div class="input-wrapper user-name-field">
-                    <input type="text" autocomplete="off" placeholder="Введите ваше имья">
+                    <input type="text" name="Name" autocomplete="off" placeholder="Введите ваше имя" required>
                 </div>
                 <div class="input-wrapper phone-field">
-                    <input id="phone-field" placeholder="Введите номер телефона"  type="text" autocomplete="off">
+                    <input id="phone-field" name="Phone" placeholder="Введите номер телефона"  type="text"
+                           autocomplete="off" required>
                 </div>
-                <button class="submit-call">Отправить заявку</button>
+                <button class="submit-call">Отправить</button>
             </form>
         </div>
     </div>
@@ -131,17 +144,17 @@
             </div>
             <nav class="footer-nav">
                 <ul class="footer-nav-list">
-                    <li><a href="">Главная</a></li>
-                    <li><a href="">Услуги</a></li>
-                    <li><a href="">Новости</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Контакты</a></li>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                 </ul>
             </nav>
             <div class="footer-contact-info">
                 <p class="address-info">г. Черкассы ул Припортовая 39/1</p>
                 <p class="email-info">solargarden.ua@gmail.com</p>
-                <p class="phone-info">0977355228</p>
+                <p class="phone-info">(067)-123-81-88</p>
             </div>
         </div>
         <div class="footer-copyright">
@@ -172,6 +185,7 @@
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgiU38D3X0FdTz4S3kzS-Sqb4kJaNwgeo&callback=initMap"></script>
 <script src="../../node_modules/jquery/dist/jquery.js"></script>
 <script src="../../node_modules/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+<script src="../js/preload.js"></script>
 <script src="../js/callback.js"></script>
 <script src="../js/slideBarSettings.js"></script>
 <script src="../js/scrollTop.js"></script>

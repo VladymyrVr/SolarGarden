@@ -2,7 +2,7 @@ $(document).ready(function () {
 
     $('.play-video').click(function (ev) {
         $(this).parent('.video-review').find('.video-review-block').css('display', 'block');
-        $(this).parent('.video-review').find('.video')[0].src += '?&autoplay=1';
+        $(this).parent('.video-review').find('.video')[0].src += '?&rel=0&autoplay=1';
         ev.preventDefault();
 
 

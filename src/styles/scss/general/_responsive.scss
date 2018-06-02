@@ -406,6 +406,21 @@
 }
 
 @media screen and(max-width: 690px) {
+
+  .welcome-section {
+    .welcome-message {
+      margin: 70px auto;
+
+      h2 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
   .about-company {
 
     .company-info {
@@ -447,6 +462,7 @@
       background-color: rgba(0, 0, 0, .80);
       margin: 0;
       height: 80px;
+      padding: 0;
 
       .logo {
         img {
@@ -505,6 +521,16 @@
 }
 
 @media screen and(max-width: 450px) {
+  .welcome-section {
+    .background-player {
+      background: url("../../img/mobile_bc.jpg") no-repeat;
+      background-size: 100% 100%;
+
+      .background-video-position {
+        display: none;
+      }
+    }
+  }
   .about-company {
     h2 {
       font-size: 22px;
@@ -600,3 +626,28 @@
   }
 }
 
+@media screen and (max-width: 390px){
+  .service-slider {
+    li {
+      max-width: 250px;
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 330px){
+  .service-slider {
+    li {
+      max-width: 240px;
+      padding-left: 15px;
+
+      a {
+        max-width: 150px;
+        font-size: 12px;
+      }
+    }
+  }
+}

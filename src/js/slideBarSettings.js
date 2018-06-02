@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     $('.js-toggle-main-menu').click(function () {
         $(this).hide();
-        $('#responsive-menu').css('width','100%');
+        $('#responsive-menu').css('width','100px');
     });
 
     $('.closebtn').click(function () {
